@@ -1,12 +1,12 @@
 {
-  "name": "@metamodern/static-layout-sidebar",
+  "name": "@metamodern/documentation",
   "version": "0.0.0",
-  "description": "A responsive sidebar-navigation layout for @metamodern/static",
+  "description": "Documentation site for Metamodern's open source packages",
   "author": "Daniel C. Narey",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/metamodern-design/static-layout-sidebar"
+    "url": "https://github.com/metamodern-design/documentation"
   },
   "scripts": {
     "prebuild": "del dist/*",
