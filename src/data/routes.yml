@@ -1,15 +1,15 @@
 -
   url: '/'
   label: 'Introduction'
-  template: 'tabpanel-1.pug'
+  template: 'tabpanel-0.pug'
 -
   url: '/spacing'
   label: 'Spacing'
-  template: 'tabpanel-2.pug'
+  template: 'tabpanel-1.pug'
 -
   url: '/typography'
   label: 'Typography'
-  template: 'tabpanel-3.pug'
+  template: 'tabpanel-2.pug'
 -
   url: '/color'
   label: 'Color'
