@@ -1,4 +1,4 @@
-figure.max-w-2c.py-1b
+figure.max-w-3c.mx-auto.py-2b
   img(
     src='media/metamodern-logo.svg'
     alt='The Metamodern Design logo'
@@ -6,7 +6,6 @@ figure.max-w-2c.py-1b
 
 .text-lighter
   p(class=`
-    px-2b
     pb-1b
     font-extrabold
     text-xl
@@ -16,8 +15,9 @@ figure.max-w-2c.py-1b
   
   p(class=`
     font-barlow-semi
-    font-semibold
     leading-sm-narrow c17_leading-base-narrow
   `)
-    | Design System: An approach to layout, typography &amp; color
-    | with TailwindCSS
+    span.font-bold
+      | Design System: 
+    span.font-semibold.italic
+      | An approach to layout, typography &amp; color with TailwindCSS
