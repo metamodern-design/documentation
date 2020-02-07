@@ -1,12 +1,20 @@
 -
   url: '/'
-  label: 'Layout'
+  label: 'Introduction'
   template: 'tabpanel-1.pug'
 -
-  url: '/specs'
-  label: 'Specs'
+  url: '/spacing'
+  label: 'Spacing'
   template: 'tabpanel-2.pug'
 -
-  url: '/ecosystem'
-  label: 'Ecosystem'
+  url: '/typography'
+  label: 'Typography'
   template: 'tabpanel-3.pug'
+-
+  url: '/color'
+  label: 'Color'
+  template: 'tabpanel-3.pug'
+-
+  url: '/responsive'
+  label: 'Responsive'
+  template: 'tabpanel-4.pug'

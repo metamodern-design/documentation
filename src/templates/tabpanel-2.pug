@@ -2,21 +2,11 @@ include /_mixin-card.pug
 include /_mixin-tabpanel.pug
 
 
-+tabpanel('2', 'Sidebar Layout: Specs')
++tabpanel('2', routes[2].label)
   section.px-1b
-    h2.pb-1b.c17_pb-one-and-half-b Template Markup
+    h2.pb-1b.c17_pb-one-and-half-b
+      | Base Units
 
-    .pb-2b
-      +card(null, 'red-orange')
-        != content.specsMarkup
-  
   section.px-1b
-    h2.pb-1b.c17_pb-one-and-half-b Layout Components
-
-    .pb-2b
-      +card('.sidebar', 'red-purple', ['font-source-code'])
-        != content.specsSidebar
-    
-    .pb-2b
-      +card('.container', 'red-purple', ['font-source-code'])
-        != content.specsContainer
+    h2.pb-1b.c17_pb-one-and-half-b
+      | Column Units
