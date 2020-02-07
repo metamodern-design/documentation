@@ -3,8 +3,8 @@
   label: 'Introduction'
   template: 'tabpanel-0.pug'
 -
-  url: '/spacing'
-  label: 'Spacing'
+  url: '/layout'
+  label: 'Layout'
   template: 'tabpanel-1.pug'
 -
   url: '/typography'
