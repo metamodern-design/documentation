@@ -7,15 +7,9 @@ include /_mixin-tabpanel.pug
     h2.pb-1b.c17_pb-one-and-half-b
       | Base Units
       
-    -
-      const baseSizes = [].concat(
-        'quarter-',
-        'half-',
-        Array.from({ length: 8 }, (_, i) => i + 1),
-      );
-      
     .font-source-code
-      each i in baseSizes
+      - const range = Array.from({ length: 8 }, (_, i) => `${i + 1}`)
+      each i in ['quarter-', 'half-'].concat(range)
         .flex.mb-half-b
           .w-4b= `${i}b`
           .h-1b.bg-darker(class=`w-${i}b`)
