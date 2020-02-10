@@ -1,19 +1,26 @@
 include /_mixin-card.pug
 include /_mixin-tabpanel.pug
 
+-
+  
 
 +tabpanel('1', routes[1].label)
   section.px-1b
     h2.pb-1b.c17_pb-one-and-half-b
       | Base Units
       
-    .text-sm
-      .flex.mb-half-b
-        p.w-4b 1b
-        p.w-1b.h-1b.bg-darker
-      .flex.mb-half-b
-        p.w-4b 2b
-        p.w-2b.h-1b.bg-darker
+    -
+      const baseSizes = [].concat(
+        'quarter-',
+        'half-'
+        Array.from({ length: 8 }, (_, i) => i + 1),
+      );
+      
+    .font-source-code
+      each i in baseSizes
+        .flex.mb-half-b
+          .w-4b= `${i}b`
+          .h-1b.bg-darker(class=`w-${i}b`)
 
   section.px-1b
     h2.pb-1b.c17_pb-one-and-half-b
