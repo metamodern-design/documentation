@@ -23,7 +23,7 @@ mixin vTablist(hue)
           `${meta.publicUrl}${route.url}`
         ).replace('//', '/')
         data-active=[
-          `bg-soft${maybeHue}`,
+          `bg-medium-light${maybeHue}`,
           `text-white`,
         ].join(' ')
         class=`
@@ -36,6 +36,6 @@ mixin vTablist(hue)
           leading-base c17_leading-base-wide
           tracking-wide
           uppercase
-          text-left
+          text-left 
         `
       )= route.label
