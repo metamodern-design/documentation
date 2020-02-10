@@ -10,8 +10,8 @@ include /_mixin-tabpanel.pug
     .font-source-code
       - const range = Array.from({ length: 8 }, (_, i) => `${i + 1}`)
       each i in ['quarter-', 'half-'].concat(range)
-        .flex.mb-half-b
-          .w-4b= `${i}b`
+        .flex.items-center.mb-half-b
+          .w-8b= `${i}b`
           .h-1b.bg-darker(class=`w-${i}b`)
 
   section.px-1b
