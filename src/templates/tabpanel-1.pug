@@ -1,8 +1,6 @@
 include /_mixin-card.pug
 include /_mixin-tabpanel.pug
 
--
-  
 
 +tabpanel('1', routes[1].label)
   section.px-1b
@@ -12,7 +10,7 @@ include /_mixin-tabpanel.pug
     -
       const baseSizes = [].concat(
         'quarter-',
-        'half-'
+        'half-',
         Array.from({ length: 8 }, (_, i) => i + 1),
       );
       
