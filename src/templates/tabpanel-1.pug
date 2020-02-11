@@ -4,15 +4,46 @@ include /_mixin-tabpanel.pug
 
 +tabpanel('1', routes[1].label)
   section.px-1b
+    p
+      | In Metamodern's design system, content sizing and spacing may be
+      | specified according to a 17px base grid or a 68px column grid. One
+      | column unit is equal to four base units. Responsive breakpoints and 
+      | container widths are always defined in whole-number column multiples.
+      | Proportional sizing classes are also provided to allow for fractional 
+      | column widths and scenarios where fluid sizing or spacing is
+      | desirable.
+
     h2.pb-1b.c17_pb-one-and-half-b
       | Base Units
+    
+    p
+      | A base unit (denoted with a letter #[code b]) is equal to
+      | #[code 1rem], which our design system expects will be set to
+      | #[code 17px]. Sizing and spacing will remain proportional if the 
+      | #[code rem] unit (the font-size of the root #[code html] element) is 
+      | set to a different #[code px] value. However, responsive breakpoints 
+      | and their corresponding container widths may need to be adjusted to
+      | appropriate values.
+    
+    .flex.items-center.mb-half-b
+        code.w-4b 1b
+        .h-1b.bg-darker.w-1b
       
-    .font-source-code
-      - const range = Array.from({ length: 8 }, (_, i) => `${i + 1}`)
-      each i in ['quarter-', 'half-'].concat(range)
-        .flex.items-center.mb-half-b
-          .w-8b= `${i}b`
-          .h-1b.bg-darker(class=`w-${i}b`)
+    h3
+      | Whole multiples
+      
+    each i in Array.from({ length: 8 }, (_, i) => `${i + 1}`)
+      .flex.items-center.mb-half-b
+        code.w-4b= `${i}b`
+        .h-1b.bg-darker(class=`w-${i}b`)
+        
+    h3
+      | Fractional values
+      
+    each i in ['quarter-', 'half-', 'one-and-half-', 'two-and-half-']
+      .flex.items-center.mb-half-b
+        code.w-8b= `${i}b`
+        .h-1b.bg-darker(class=`w-${i}b`)
 
   section.px-1b
     h2.pb-1b.c17_pb-one-and-half-b
