@@ -11,8 +11,6 @@ include /_mixin-tabpanel.pug
       border-light
     `)
       != content.layoutToc
-    
-  h2#sizing-spacing= 'Sizing & Spacing'
   
   section  
     .text-lg
@@ -20,13 +18,13 @@ include /_mixin-tabpanel.pug
       
     .flex.items-center.mb-half-b
       .w-1b.h-1b.bg-darker
-      code.p-1b.font-bold.text-sm= '1b → 17px'
+      code.pl-1b.font-bold.text-sm= '1b → 17px'
         
     .flex.items-center.mb-half-b
       .w-1c.h-1b.bg-darker
-      code.p-1b.font-bold.text-sm= '1c → 68px'
+      code.pl-1b.font-bold.text-sm= '1c → 68px'
         
-  h3#base-units= 'Base Units'
+  h2#base-units= 'Base Units'
 
   section
     != content.layoutBaseUnits
@@ -36,7 +34,7 @@ include /_mixin-tabpanel.pug
         .h-1b.bg-darker(class=`w-${i}b`)
         code.pl-1b.font-bold.text-sm= `${i}b`
         
-  h3#column-units= 'Column Units'
+  h2#column-units= 'Column Units'
 
   section
     != content.layoutColumnUnits
