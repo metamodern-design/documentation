@@ -1,5 +1,6 @@
 const isLocalRoute = (url) => {
   const schemes = [
+    '#',
     'http://',
     'https://',
     'ftp://',
