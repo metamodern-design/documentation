@@ -13,31 +13,34 @@ include /_mixin-tabpanel.pug
       != content.layoutToc
     
   h2#sizing-spacing= 'Sizing & Spacing'
-    section  
-      .text-lg
-        != content.layoutHeading
+  
+  section  
+    .text-lg
+      != content.layoutHeading
+      
+    .flex.items-center.mb-half-b
+      .w-1b.h-1b.bg-darker
+      code.p-1b.font-bold.text-sm= '1b → 17px'
         
-      .flex.items-center.mb-half-b
-        .w-1b.h-1b.bg-darker
-        code.p-1b.font-bold.text-sm= '1b => 17px'
-          
-      .flex.items-center.mb-half-b
-        .w-1c.h-1b.bg-darker
-      code.p-1b.font-bold.text-sm= '1c => 68px'
+    .flex.items-center.mb-half-b
+      .w-1c.h-1b.bg-darker
+      code.p-1b.font-bold.text-sm= '1c → 68px'
         
   h3#base-units= 'Base Units'
-    section
-      != content.layoutBaseUnits
-    
+
+  section
+    != content.layoutBaseUnits
+  
     each i in ['quarter-', 'half-', 1, 'one-and-half-', 2, 'two-and-half-', 3, 4, 5, 6, 7, 8]
       .flex.items-center.mb-half-b
         .h-1b.bg-darker(class=`w-${i}b`)
         code.pl-1b.font-bold.text-sm= `${i}b`
         
   h3#column-units= 'Column Units'
-    section
-      != content.layoutColumnUnits
-      
+
+  section
+    != content.layoutColumnUnits
+    
     each i in [1, 2, 3, 4]
       .flex.items-center.mb-half-b
         .h-1b.bg-darker(class=`w-${i}c`)
@@ -46,3 +49,5 @@ include /_mixin-tabpanel.pug
     p.font-semibold.font-italic Column unit values 5c to 20c not shown.
   
   h2#responsive-breakpoints= 'Responsive Breakpoints'
+  
+  section
