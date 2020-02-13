@@ -3,57 +3,60 @@ include /_mixin-tabpanel.pug
 
 
 +tabpanel('1', routes[1].label)
-  section
+  section(class=`
+    border-t-1
+    border-b-1
+    border-light
+    text-sm
+    leading-sm-narrow
+  `)
     != content.layoutToc
     
   section#sizing-spacing
-    p
-      | In Metamodern's design system, content sizing and spacing may be
-      | specified according to a 17px base grid or a 68px column grid. One
-      | column unit is equal to four base units. Responsive breakpoints and 
-      | container widths are always defined in whole-number column multiples.
-      | Proportional sizing classes are also provided to allow for fractional 
-      | column widths and scenarios where fluid sizing or spacing is
-      | desirable.
-
-    h2
-      | Sizing &amp; Spacing
-    
-    p
-      | A base unit (denoted with a letter #[code b]) is equal to
-      | #[code 1rem], which our design system expects will be set to
-      | #[code 17px]. Sizing and spacing will remain proportional if the 
-      | #[code rem] unit (the font-size of the root #[code html] element) is 
-      | set to a different #[code px] value. However, responsive breakpoints 
-      | and their corresponding container widths may need to be adjusted to
-      | appropriate values.
-    
+    h2= 'Sizing & Spacing'
+      
+    p.text-lg
+      != content.layoutHeading
+      
     .flex.items-center.mb-half-b
-        code.w-4b 1b
-        .h-1b.bg-darker.w-1b
-      
-    h3
-      | Whole multiples
-      
-    each i in Array.from({ length: 8 }, (_, i) => `${i + 1}`)
-      .flex.items-center.mb-half-b
-        code.w-4b= `${i}b`
-        .h-1b.bg-darker(class=`w-${i}b`)
+        code.w-4b.font-bold.text-sm 1b
+        .w-1b.h-1b.bg-darker
         
-    h3
-      | Fractional values
-      
-    each i in ['quarter-', 'half-', 'one-and-half-', 'two-and-half-']
+    .flex.items-center.mb-half-b
+        code.w-4b.font-bold.text-sm 1c
+        .w-1c.h-1b.bg-darker
+    
+    h3= 'Base Units'
+    
+    -
+      const baseUnits = [
+        ['quarter-', 0.25],
+        ['half-', 0.5], 
+        ['1', 1],
+        ['one-and-half-', 1.5],
+        ['2', 2],
+        ['two-and-half-', 2.5],
+        ['3', 3],
+        ['4', 4],
+        ['5', 5],
+        ['6', 6],
+        ['7', 7],
+        ['8', 8],
+      ];
+    
+    each i in baseUnits
+      - const [k,v] = i
       .flex.items-center.mb-half-b
-        code.w-8b= `${i}b`
-        .h-1b.bg-darker(class=`w-${i}b`)
-
-  section
-    h2.pb-1b.c17_pb-one-and-half-b
-      | Column Units
-  
-  section
-    h2.pb-1b.c17_pb-one-and-half-b
-      | Proportional Sizing
+        .h-1b.bg-darker(class=`w-${k}b`)
+        code.pl-1b.font-bold.text-sm= `${k}b = ${v * 17}px`
+        
+    h3= 'Column Units'
+      
+    each i in [1, 2, 3, 4]
+      .flex.items-center.mb-half-b
+        .h-1b.bg-darker(class=`w-${i}c`)
+        code.pl-1b.font-bold.text-sm= `${i}c = ${i * 68}px`
+        
+    p.font-semibold #[em Up to] #[code 20c]
   
   section#responsive-breakpoints

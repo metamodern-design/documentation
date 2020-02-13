@@ -1,8 +1,12 @@
 mixin tabpanel(id, heading)
-  .typeset.px-1b(
+  div(
     id=`main-tabpanel-${id}`
     role='tabpanel'
     aria-labelledby=`nav-tab-${id}`
+    class=`
+      typeset
+      px-1b
+    `
   )
     h1= heading
 
