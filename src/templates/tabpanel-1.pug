@@ -3,60 +3,46 @@ include /_mixin-tabpanel.pug
 
 
 +tabpanel('1', routes[1].label)
-  section(class=`
-    border-t-1
-    border-b-1
-    border-light
-    text-sm
-    leading-sm-narrow
-  `)
-    != content.layoutToc
+  section
+    div(class=`
+      py-1b
+      border-t-1
+      border-b-1
+      border-light
+    `)
+      != content.layoutToc
     
-  section#sizing-spacing
-    h2= 'Sizing & Spacing'
-      
-    p.text-lg
-      != content.layoutHeading
-      
-    .flex.items-center.mb-half-b
-        code.w-4b.font-bold.text-sm 1b
-        .w-1b.h-1b.bg-darker
+  h2#sizing-spacing= 'Sizing & Spacing'
+    section  
+      .text-lg
+        != content.layoutHeading
         
-    .flex.items-center.mb-half-b
-        code.w-4b.font-bold.text-sm 1c
-        .w-1c.h-1b.bg-darker
-    
-    h3= 'Base Units'
-    
-    -
-      const baseUnits = [
-        ['quarter-', 0.25],
-        ['half-', 0.5], 
-        ['1', 1],
-        ['one-and-half-', 1.5],
-        ['2', 2],
-        ['two-and-half-', 2.5],
-        ['3', 3],
-        ['4', 4],
-        ['5', 5],
-        ['6', 6],
-        ['7', 7],
-        ['8', 8],
-      ];
-    
-    each i in baseUnits
-      - const [k,v] = i
       .flex.items-center.mb-half-b
-        .h-1b.bg-darker(class=`w-${k}b`)
-        code.pl-1b.font-bold.text-sm= `${k}b = ${v * 17}px`
+        .w-1b.h-1b.bg-darker
+        code.p-1b.font-bold.text-sm= '1b => 17px'
+          
+      .flex.items-center.mb-half-b
+        .w-1c.h-1b.bg-darker
+      code.p-1b.font-bold.text-sm= '1c => 68px'
         
-    h3= 'Column Units'
+  h3#base-units= 'Base Units'
+    section
+      != content.layoutBaseUnits
+    
+    each i in ['quarter-', 'half-', 1, 'one-and-half-', 2, 'two-and-half-', 3, 4, 5, 6, 7, 8]
+      .flex.items-center.mb-half-b
+        .h-1b.bg-darker(class=`w-${i}b`)
+        code.pl-1b.font-bold.text-sm= `${i}b`
+        
+  h3#column-units= 'Column Units'
+    section
+      != content.layoutColumnUnits
       
     each i in [1, 2, 3, 4]
       .flex.items-center.mb-half-b
         .h-1b.bg-darker(class=`w-${i}c`)
-        code.pl-1b.font-bold.text-sm= `${i}c = ${i * 68}px`
+        code.pl-1b.font-bold.text-sm= `${i}c`
         
-    p.font-semibold #[em Up to] #[code 20c]
+    p.font-semibold.font-italic Column unit values 5c to 20c not shown.
   
-  section#responsive-breakpoints
+  h2#responsive-breakpoints= 'Responsive Breakpoints'
