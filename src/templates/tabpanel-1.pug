@@ -14,7 +14,7 @@ include /_mixin-tabpanel.pug
   
   section  
     .pb-2b.text-lg.leading-lg-narrow
-      != content.layoutHeading
+      != content.layoutHeading1
       
     .flex.items-center.mb-half-b
       .w-1b.h-1b.bg-darker
@@ -23,6 +23,8 @@ include /_mixin-tabpanel.pug
     .flex.items-center.mb-half-b
       .w-1c.h-1b.bg-darker
       code.pl-1b.font-bold.text-sm= '1c → 68px'
+    
+    != content.layoutHeading2
         
     h2#base-units= 'Base Units'
 
@@ -60,9 +62,11 @@ include /_mixin-tabpanel.pug
         .h-1b.bg-darker(class=`w-${i}c`)
         code.pl-1b.font-bold.text-sm= `${i}c`
         
-    p.font-semibold.italic Up to 20c
+    p.font-semibold.italic= '... up to 15c'
         
-    h2#relative-sizes= 'Relative Sizes'
+    h2#relative-proportions= 'Relative Proportions'
+    
+    != content.layoutRelativeProportions
     
     each i in ['fifth', 'fourth', 'third', 'two-fifths', 'half', 'three-fifths', 'two-thirds', 'three-fourths', 'four-fifths', 'full']
       .flex.items-center.mb-half-b

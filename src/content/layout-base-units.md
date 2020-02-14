@@ -1,1 +1,1 @@
-Base units are used for margins and padding and for setting the width and height of smaller content elements.
+Base units are used for margins and padding and for setting the width and height of smaller content elements. They may be used with any of the following Tailwind prefixes: `w-`, `max-w`, `min-w`, `h-`, `max-h`, `min-h`, `p-`, `py-`, `px-`, `pt-`, `pl-`, `pb-`, `pr-`, `m-`, `my-`, `mx-`, `mt-`, `ml-`, `mb-`, `mr-`, `-m-`, `-my-`, `-mx-`, `-mt-`, `-ml-`, `-mb-`, `-mr-`.

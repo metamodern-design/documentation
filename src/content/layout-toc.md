@@ -1,4 +1,4 @@
 - [Base Units](#base-units)
 - [Column Units](#column-units)
-- [Relative Sizes](#relative-sizes)
+- [Relative Proportions](#relative-proportions)
 - [Responsive Breakpoints](#responsive-breakpoints)
