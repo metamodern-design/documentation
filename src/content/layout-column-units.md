@@ -1,1 +1,1 @@
-Column units are used for setting the width, height, or padding of larger content elements and layout components. They may be used with any of the following Tailwind prefixes: `w-`, `max-w`, `min-w`, `h-`, `max-h`, `min-h`, `p-`, `py-`, `px-`, `pt-`, `pl-`, `pb-`, `pr-`.
+Column units are used for setting the width, height, or padding of larger content elements and layout components. They may be used with any of the following Tailwind prefixes: __width:__ *w-*, *max-w*, *min-w* / __height:__ *h-*, *max-h*, *min-h* / __padding:__ *p-*, *py-*, *px-*, *pt-*, *pl-*, *pb-*, *pr-*.
