@@ -26,7 +26,8 @@ include /_mixin-tabpanel.pug
         
     h2#base-units= 'Base Units'
 
-    != content.layoutBaseUnits
+    .italic
+      != content.layoutBaseUnits
   
     each i in ['quarter-', 'half-', 1, 'one-and-half-', 2, 'two-and-half-', 3, 4, 5, 6, 7, 8]
       .flex.items-center.mb-half-b
@@ -34,14 +35,24 @@ include /_mixin-tabpanel.pug
         code.pl-1b.font-bold.text-sm= `${i}b`
         
     h2#column-units= 'Column Units'
-
-    != content.layoutColumnUnits
+    
+    .italic
+      != content.layoutColumnUnits
     
     each i in [1, 2, 3, 4]
       .flex.items-center.mb-half-b
         .h-1b.bg-darker(class=`w-${i}c`)
         code.pl-1b.font-bold.text-sm= `${i}c`
         
-    p.font-semibold.font-italic Column unit values 5c to 20c not shown.
+    p.font-semibold.italic Column unit values 5c to 20c not shown.
+    
+    h2#relative-sizes= 'Relative Sizes'
+    
+    each i in ['fifth', 'fourth', 'third', 'two-fifths', 'half', 'three-fifths', 'two-thirds', 'three-fourths', 'four-fifths', 'full']
+      .flex.items-center.mb-half-b
+        .w-3c.bg-darker
+          .h-1b.bg-dark-blue(class=`w-${i}`)
+        code.pl-1b.font-bold.text-sm= i
+      
   
     h2#responsive-breakpoints= 'Responsive Breakpoints'

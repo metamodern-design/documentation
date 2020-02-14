@@ -11,8 +11,8 @@
   label: 'Typography'
   template: 'tabpanel-2.pug'
 -
-  url: '/color'
-  label: 'Color'
+  url: '/color-palette'
+  label: 'Color Palette'
   template: 'tabpanel-3.pug'
 -
   url: '/customization'
