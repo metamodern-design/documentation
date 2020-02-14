@@ -70,7 +70,10 @@ include /_mixin-tabpanel.pug
     
     each i in ['fifth', 'fourth', 'third', 'two-fifths', 'half', 'three-fifths', 'two-thirds', 'three-fourths', 'four-fifths', 'full']
       .flex.items-center.mb-half-b
-        .w-3c.bg-darker
+        div(class=`
+          w-2c c11_w-4c c17_w-6c 
+          bg-darker
+        `)
           .h-1b.bg-soft-red(class=`w-${i}`)
         code.pl-1b.font-bold.text-sm= i
       
@@ -79,6 +82,6 @@ include /_mixin-tabpanel.pug
     
     != content.layoutResponsiveDesign
     
-    p:code.pl-1b.font-bold.text-sm= 'c11 → 748px (tablet)'
+    p: code.pl-1b.font-bold.text-sm= 'c11 → 748px (tablet and larger)'
 
-    p:code.pl-1b.font-bold.text-sm= 'c17 → 1156px (laptop+)'
+    p: code.pl-1b.font-bold.text-sm= 'c17 → 1156px (laptop and larger)'
