@@ -20,7 +20,7 @@ include /_mixin-tabpanel.pug
       .w-1b.h-1b.bg-darker
       code.pl-1b.font-bold.text-sm= '1b → 17px'
         
-    .flex.items-center.mb-half-b
+    .flex.items-center.mb-one-and-half-b
       .w-1c.h-1b.bg-darker
       code.pl-1b.font-bold.text-sm= '1c → 68px'
     
@@ -75,4 +75,10 @@ include /_mixin-tabpanel.pug
         code.pl-1b.font-bold.text-sm= i
       
   
-    h2#responsive-breakpoints= 'Responsive Breakpoints'
+    h2#responsive-design= 'Responsive Design'
+    
+    != content.layoutResponsiveDesign
+    
+    p:code.pl-1b.font-bold.text-sm= 'c11 → 748px (tablet)'
+
+    p:code.pl-1b.font-bold.text-sm= 'c17 → 1156px (laptop+)'
