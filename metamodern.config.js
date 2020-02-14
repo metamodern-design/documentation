@@ -16,6 +16,7 @@ const designSystemConfig = {
   variants: {
     borderWidth: ['responsive'],
     borderRadius: ['responsive'],
+    display: ['responsive'],
     fontSize: ['responsive'],
     lineHeight: ['responsive'],
     margin: ['responsive'],
