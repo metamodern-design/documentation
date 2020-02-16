@@ -13,7 +13,11 @@ include /_mixin-tabpanel.pug
       != content.layoutToc
   
   section  
-    .pb-2b.text-lg.leading-lg-narrow
+    div(class=`
+      pb-2b
+      text-base c17_text-lg
+      leading-base-narrow c17_leading-lg-narrow
+    `)
       != content.layoutHeading1
       
     .flex.items-center.mb-half-b
