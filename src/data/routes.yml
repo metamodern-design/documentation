@@ -1,6 +1,6 @@
 -
   url: '/'
-  label: 'Introduction'
+  label: 'Overview'
   template: 'tabpanel-0.pug'
 -
   url: '/sizing-spacing'
