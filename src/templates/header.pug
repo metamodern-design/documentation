@@ -1,18 +1,26 @@
-figure.pb-2b
+figure.px-1b.pb-2b
   img(
     src='media/metamodern-logo.svg'
     alt='Metamodern open source'
   )
 
-.text-lighter
+div(class=`
+  pt-half-b
+  border-t-1
+  border-light-blue-purple
+  text-lighter
+`)
   p(class=`
+    px-1b
     pb-1b
-    font-extrabold
-    text-lg c17_text-xl
+    font-bold
+    text-lg
+    leading-lg-narrow
   `)= 'Design System'
   
   p(class=`
     font-barlow-semi
-    font-semibold
-    leading-sm-narrow c17_leading-base-narrow
+    font-medium
+    text-sm
+    leading-sm-narrow
   `)= 'An approach to layout, typography & color with TailwindCSS'
