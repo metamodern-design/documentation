@@ -1,0 +1,20 @@
+mixin gridlines(rows=1)
+  div(class=`
+    relative
+    w-full
+    max-w-5c
+    h-4b
+    mb-1b
+    border-t-1
+    border-l-1
+    border-r-1
+    border-medium
+    border-dotted
+  `)
+    - for (let i = 0; i < rows; i++)
+      div(class=`
+        h-1b
+        border-b-1
+        border-light
+        border-dotted
+      `)
