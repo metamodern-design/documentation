@@ -22,9 +22,10 @@ include /_mixins/toc.pug
     h2#leading= 'Leading'
     
     each i in ['sm', 'base', 'lg', 'xl']
-      each j in ['-narrow', '', '-wide']
-        +level()
+      +level()
+        each j in ['-narrow', '', '-wide']
           p(class=`
+            px-half-b mx-1b
             bg-light-yellow-orange
             text-${i}
             leading-${i}${j}
