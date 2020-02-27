@@ -1,52 +1,46 @@
-include /_mixin-card.pug
-include /_mixin-tabpanel.pug
+include /_mixins/label.pug
+include /_mixins/lede.pug
+include /_mixins/level.pug
+include /_mixins/tabpanel.pug
+include /_mixins/toc.pug
 
 
 +tabpanel('1', routes[1].label)
   section
-    div(class=`
-      py-1b c17_py-one-and-half-b
-      border-t-1
-      border-b-1
-      border-light
-    `)
+    +toc()
       != content.layoutToc
   
   section  
-    div(class=`
-      pb-2b
-      text-base c17_text-lg
-      leading-base-narrow c17_leading-lg-narrow
-    `)
-      != content.layoutHeading1
+    +lede('pb-2b')
+      != content.layoutLede1
       
-    .flex.items-center.mb-half-b
+    +level('mb-half-b')
       .w-1b.h-1b.bg-darker
-      code.pl-1b.font-bold.text-sm= '1b → 17px'
+      +label('1b → 17px')
         
-    .flex.items-center.mb-one-and-half-b
+    +level('mb-one-and-half-b')
       .w-1c.h-1b.bg-darker
-      code.pl-1b.font-bold.text-sm= '1c → 68px'
+      +label('1c → 68px')
     
-    != content.layoutHeading2
+    != content.layoutLede2
         
     h2#base-units= 'Base Units'
 
     != content.layoutBaseUnits
   
     each i in ['quarter-', 'half-', 1, 'one-and-half-', 2, 'two-and-half-', 3, 4, 5, 6, 7, 8]
-      .flex.items-center.mb-half-b
+      +level('mb-half-b')
         .h-1b.bg-darker(class=`w-${i}b`)
-        code.pl-1b.font-bold.text-sm= `${i}b`
+        +label(`${i}b`)
         
     h2#column-units= 'Column Units'
     
     != content.layoutColumnUnits
     
     each i in [1, 2, 3]
-      .flex.items-center.mb-half-b
+      +level('mb-half-b')
         .h-1b.bg-darker(class=`w-${i}c`)
-        code.pl-1b.font-bold.text-sm= `${i}c`
+        +label(`${i}c`)
     
     each i in [4, 5, 6]
       div(class=`
@@ -55,7 +49,7 @@ include /_mixin-tabpanel.pug
         mb-half-b
       `)
         .h-1b.bg-darker(class=`w-${i}c`)
-        code.pl-1b.font-bold.text-sm= `${i}c`
+        +label(`${i}c`)
         
     each i in [7, 8, 9]
       div(class=`
@@ -64,22 +58,22 @@ include /_mixin-tabpanel.pug
         mb-half-b
       `)
         .h-1b.bg-darker(class=`w-${i}c`)
-        code.pl-1b.font-bold.text-sm= `${i}c`
+        +label(`${i}c`)
         
-    p.font-semibold.italic= '... up to 15c'
+    p.font-semibold.italic= '... up to 20c'
         
     h2#relative-proportions= 'Relative Proportions'
     
     != content.layoutRelativeProportions
     
     each i in ['fifth', 'fourth', 'third', 'two-fifths', 'half', 'three-fifths', 'two-thirds', 'three-fourths', 'four-fifths', 'full']
-      .flex.items-center.mb-half-b
+      +level('mb-half-b')
         div(class=`
           w-2c c11_w-4c c17_w-6c 
           bg-darker
         `)
           .h-1b.bg-soft-red(class=`w-${i}`)
-        code.pl-1b.font-bold.text-sm= i
+        +label(i)
       
   
     h2#responsive-design= 'Responsive Design'
@@ -87,6 +81,7 @@ include /_mixin-tabpanel.pug
     != content.layoutResponsiveDesign
     
     p.mb-half-b
-      code.pl-1b.font-bold.text-sm= 'c11 → 748px (tablet+)'
+      +label('c11 → 748px (tablet+)')
 
-    p: code.pl-1b.font-bold.text-sm= 'c17 → 1156px (laptop+)'
+    p
+      +label('c17 → 1156px (laptop+)')

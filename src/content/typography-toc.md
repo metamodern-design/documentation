@@ -1,0 +1,4 @@
+- [Text Size](#text-size)
+- [Leading](#leading)
+- [Font Family](#font-family)
+- [Font Weight](#font-weight)
