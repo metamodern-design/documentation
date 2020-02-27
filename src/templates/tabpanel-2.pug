@@ -30,27 +30,35 @@ include /_mixins/index.pug
     
     h3= 'Sans'
     
-    ul
+    ul.unstyled
       each url, name in fontFamilies.sans
-        li: a(href=url)= `font-${name}`
+        li
+          +extLink(url)
+            = `font-${name}`
     
     h3= 'Condensed'
     
-    ul
+    ul.unstyled
       each url, name in fontFamilies.condensed
-        li: a(href=url)= `font-${name}`
+        li
+          +extLink(url)
+            = `font-${name}`
         
     h3= 'Serif'
     
-    ul
+    ul.unstyled
       each url, name in fontFamilies.serif
-        li: a(href=url)= `font-${name}`
+        li
+          +extLink(url)
+            = `font-${name}`
     
     h3= 'Mono'
     
-    ul
+    ul.unstyled
       each url, name in fontFamilies.mono
-        li: a(href=url)= `font-${name}`
+        li
+          +extLink(url)
+            = `font-${name}`
       
     
     h2#weight= 'Weight'
