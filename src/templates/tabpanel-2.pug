@@ -21,6 +21,15 @@ include /_mixins/toc.pug
     
     h2#leading= 'Leading'
     
+    each i in ['sm', 'base', 'lg', 'xl']
+      each j in ['-narrow', '', '-wide']
+        +level()
+          p(class=`
+            bg-light-yellow-orange
+            text-${i}
+            leading-${i}${j}
+          `)= `leading-${i}${j}`
+    
     h2#family= 'Family'
     
     h2#weight= 'Weight'
