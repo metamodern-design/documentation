@@ -16,7 +16,7 @@ include /_mixins/toc.pug
     
     h2#size= 'Size'
     
-    each v, k in { xs: 13, sm: 17, base: 21, lg: 27.5, xl: 34, 2xl: 44.5, 3xl: 55, 4xl: 72, 5xl: 89, 6xl: 116.5 }
+    each v, k in { xs: 13, sm: 17, base: 21, lg: 27.5, xl: 34, '2xl': 44.5, '3xl': 55, '4xl': 72, '5xl': 89, '6xl': 116.5 }
       p(class=`text-${k}` style='line-height: 1')= `text-${k} → ${v} px`
     
     h2#leading= 'Leading'
