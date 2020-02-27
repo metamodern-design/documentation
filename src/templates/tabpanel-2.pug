@@ -22,41 +22,41 @@ include /_mixins/toc.pug
     h2#leading= 'Leading'
     
     each i in ['sm', 'base', 'lg', 'xl']
-      +level()
-        each j in ['-narrow', '', '-wide']
-          div(class=`
-            relative
-            w-full
-            max-w-5c
-            h-4b
-            border-t-1
-            border-l-1
-            border-r-1
-            border-light
-            border-dotted
-          `)
-            each k in [1, 2, 3, 4]
-              div(class=`
-                h1-b
-                border-b-1
-                border-light
-                border-dotted
-              )
+      each j in ['', '-narrow', '-wide']
+        div(class=`
+          relative
+          w-full
+          max-w-5c
+          h-4b
+          mb-1b
+          border-t-1
+          border-l-1
+          border-r-1
+          border-light
+          border-dotted
+        `)
+          each k in [1, 2, 3, 4]
             div(class=`
-              absolute
-              top-0
-              bottom-0
-              left-0
-              right-0
-              flex
-              items-center
-            `)
-              div(class=`
-                px-half-b mx-1b
-                bg-light-yellow-orange
-                text-${i}
-                leading-${i}${j}
-              `)= `leading-${i}${j}`
+              h1-b
+              border-b-1
+              border-light
+              border-dotted
+            )
+          div(class=`
+            absolute
+            top-0
+            bottom-0
+            left-0
+            right-0
+            flex
+            items-center
+          `)
+            div(class=`
+              px-half-b mx-1b
+              bg-light-yellow-orange
+              text-${i}
+              leading-${i}${j}
+            `)= `leading-${i}${j}`
     
     h2#family= 'Family'
     
