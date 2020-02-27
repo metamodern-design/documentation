@@ -21,7 +21,7 @@ include /_mixins/toc.pug
     
     h2#leading= 'Leading'
     
-    each i in ['sm', 'base', 'lg', 'xl']
+    each i in ['sm', 'base', 'lg']
       each j in ['', '-narrow', '-wide']
         div(class=`
           relative
@@ -37,7 +37,7 @@ include /_mixins/toc.pug
         `)
           each k in [1, 2, 3, 4]
             div(class=`
-              h1-b
+              h-1b
               border-b-1
               border-light
               border-dotted
