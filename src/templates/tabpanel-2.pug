@@ -1,6 +1,7 @@
 include /_mixins/label.pug
 include /_mixins/lede.pug
 include /_mixins/level.pug
+include /_mixins/spacer.pug
 include /_mixins/tabpanel.pug
 include /_mixins/toc.pug
 
@@ -14,6 +15,16 @@ include /_mixins/toc.pug
     +lede()
     
     h2#size= 'Size'
+    
+    +level()
+      span.text-xs= 'xs'
+      +spacer()
+      span.text-sm= 'sm'
+      +spacer()
+      span.text-base= 'base'
+      +spacer()
+      span.text-lg= 'lg'
+      
     
     h2#leading= 'Leading'
     
