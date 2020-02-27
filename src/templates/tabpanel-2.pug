@@ -28,38 +28,16 @@ include /_mixins/index.pug
     
     h2#family= 'Family'
     
-    h3= 'Sans'
+    each category in ['Sans', 'Condensed', 'Serif', 'Mono']
+      h3= category
     
-    ul.unstyled
-      each url, name in fontFamilies.sans
-        li
-          +extLink(url)
-            = `font-${name}`
-    
-    h3= 'Condensed'
-    
-    ul.unstyled
-      each url, name in fontFamilies.condensed
-        li
-          +extLink(url)
-            = `font-${name}`
-        
-    h3= 'Serif'
-    
-    ul.unstyled
-      each url, name in fontFamilies.serif
-        li
-          +extLink(url)
-            = `font-${name}`
-    
-    h3= 'Mono'
-    
-    ul.unstyled
-      each url, name in fontFamilies.mono
-        li
-          +extLink(url)
-            = `font-${name}`
-      
+      ul.unstyled
+        each url, name in fontFamilies[category.toLowerCase()]
+          li.mb-half-b
+            +extLink(url)
+              +label(`font-${name}`)
     
     h2#weight= 'Weight'
+    
+    +label('font-regular → 400')
     
