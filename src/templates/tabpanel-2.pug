@@ -20,20 +20,11 @@ include /_mixins/index.pug
       each j in ['', '-narrow', '-wide']
         +gridlines(rows)
           div(class=`
-            absolute
-            top-0
-            bottom-0
-            left-0
-            right-0
-            flex
-            items-center
-          `)
-            div(class=`
-              px-half-b mx-1b
-              bg-light-yellow-orange
-              text-${i}
-              leading-${i}${j}
-            `)= `leading-${i}${j}`
+            px-half-b mx-1b
+            bg-light-yellow-orange
+            text-${i}
+            leading-${i}${j}
+          `)= `leading-${i}${j}`
     
     h2#family= 'Family'
     
