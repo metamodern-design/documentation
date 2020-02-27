@@ -11,11 +11,17 @@ include /_mixins/index.pug
     
     h2#background-colors= 'Background Colors'
     
-    h3= 'Grays'
+    h3= 'gray'
 
     each shade in colorPalette.shades
       +level('mb-half-b')
-        .w-2b.h-2b.rounded-1b(class=`bg-${shade}`)
+        div(class=`
+          flex-shrink-0
+          w-2b
+          h-2b
+          rounded-2b
+          bg-${shade}
+        )
         +label(`bg-${shade}`)
     
     each hue in colorPalette.hues
@@ -23,7 +29,64 @@ include /_mixins/index.pug
       
       each shade in colorPalette.shades
         +level('mb-half-b')
-          .w-2b.h-2b.rounded-1b(class=`bg-${shade}-${hue}`)
+          div(class=`
+            flex-shrink-0
+            w-2b
+            h-2b
+            rounded-1b
+            bg-${shade}-${hue}
+          )
           +label(`bg-${shade}-${hue}`)
     
     h2#text-border-colors= 'Text & Border Colors'
+    
+    h3= 'gray'
+
+    each shade in colorPalette.shades
+      +level('mb-half-b')
+        div(class=`
+          flex
+          items-center
+          justify-center
+          flex-shrink-0
+          w-2b
+          h-2b
+          rounded-2b
+          border-1
+          border-${shade}
+          text-${shade}
+        )
+          div= 'a'
+        div(class=`
+          flex
+          flex-col
+          justify-center
+        )
+          +label(`text-${shade}`)
+          +label(`border-${shade}`)
+    
+    each hue in colorPalette.hues
+      h3= hue
+      
+      each shade in colorPalette.shades
+        +level('mb-half-b')
+        div(class=`
+          flex
+          items-center
+          justify-center
+          flex-shrink-0
+          w-2b
+          h-2b
+          rounded-2b
+          border-1
+          border-${shade}-${hue}
+          text-${shade}-${hue}
+        )
+          div= 'a'
+        div(class=`
+          flex
+          flex-col
+          justify-center
+        )
+          +label(`text-${shade}-${hue}`)
+          +label(`border-${shade}-${hue}`)
