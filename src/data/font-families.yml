@@ -1,0 +1,30 @@
+sans:
+  asap: 'https://fonts.google.com/specimen/Asap'
+  barlow: 'https://fonts.google.com/specimen/Barlow'
+  exo-2: 'https://fonts.google.com/specimen/Exo+2'
+  inter: 'https://rsms.me/inter/'
+  libre-franklin: 'https://fonts.google.com/specimen/Libre+Franklin'
+  montserrat: 'https://fonts.google.com/specimen/Montserrat'
+  nunito: 'https://fonts.google.com/specimen/Nunito'
+  ibm-plex-sans: 'https://fonts.google.com/specimen/IBM+Plex+Sans'
+  source-sans-pro: 'https://fonts.google.com/specimen/Source+Sans+Pro'
+
+condensed:
+  asap-condensed: 'https://fonts.google.com/specimen/Asap+Condensed'
+  barlow-condensed: 'https://fonts.google.com/specimen/Barlow+Condensed'
+  barlow-semi-condensed: 'https://fonts.google.com/specimen/Barlow+Semi+Condensed'
+  ibm-plex-sans-condensed: 'https://fonts.google.com/specimen/IBM+Plex+Sans+Condensed'
+
+serif:
+  libre-baskerville: 'https://fonts.google.com/specimen/Libre+Baskerville'
+  crimson-pro: 'https://fonts.google.com/specimen/Crimson+Pro'
+  eb-garamond: 'https://fonts.google.com/specimen/EB+Garamond'
+  ibm-plex-serif: 'https://fonts.google.com/specimen/IBM+Plex+Serif'
+  rokkitt: 'https://fonts.google.com/specimen/Rokkitt'
+  source-serif-pro: 'https://fonts.google.com/specimen/Source+Serif+Pro'
+
+mono:
+  courier-prime: 'https://fonts.google.com/specimen/Courier+Prime'
+  cutive-mono: 'https://fonts.google.com/specimen/Cutive+Mono'
+  ibm-plex-mono: 'https://fonts.google.com/specimen/IBM+Plex+Mono'
+  source-code-pro: 'https://fonts.google.com/specimen/Source+Code+Pro'

@@ -28,4 +28,30 @@ include /_mixins/index.pug
     
     h2#family= 'Family'
     
+    h3= 'Sans'
+    
+    ul
+      each url, name in fontFamilies.sans
+        li: a(href=url)= `font-${name}`
+    
+    h3= 'Condensed'
+    
+    ul
+      each url, name in fontFamilies.condensed
+        li: a(href=url)= `font-${name}`
+        
+    h3= 'Serif'
+    
+    ul
+      each url, name in fontFamilies.serif
+        li: a(href=url)= `font-${name}`
+    
+    h3= 'Mono'
+    
+    ul
+      each url, name in fontFamilies.mono
+        li: a(href=url)= `font-${name}`
+      
+    
     h2#weight= 'Weight'
+    
