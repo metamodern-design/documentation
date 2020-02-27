@@ -3,3 +3,27 @@ include /_mixins/index.pug
 
 +tabpanel('3', routes[3].label)
   section.px-1b
+    +toc()
+      != content.colorPaletteToc
+  
+  section  
+    +lede()
+    
+    h2#background-colors= 'Background Colors'
+    
+    h3= 'Grays'
+
+    each shade in colorPalette.shades
+      +level('mb-half-b')
+        .w-2b.h-2b.rounded-1b(class=`bg-${shade}`)
+        +label(`bg-${shade}`)
+    
+    each hue in colorPalette.hues
+      h3= hue
+      
+      each shade in colorPalette.shades
+        +level('mb-half-b')
+          .w-2b.h-2b.rounded-1b(class=`bg-${shade}-${hue}`)
+          +label(`bg-${shade}-${hue}`)
+    
+    h2#text-border-colors= 'Text & Border Colors'
