@@ -21,7 +21,7 @@ include /_mixins/index.pug
           h-2b
           rounded-2b
           bg-${shade}
-        )
+        `)
         +label(`bg-${shade}`)
     
     each hue in colorPalette.hues
@@ -35,7 +35,7 @@ include /_mixins/index.pug
             h-2b
             rounded-1b
             bg-${shade}-${hue}
-          )
+          `)
           +label(`bg-${shade}-${hue}`)
     
     h2#text-border-colors= 'Text & Border Colors'
@@ -55,13 +55,13 @@ include /_mixins/index.pug
           border-1
           border-${shade}
           text-${shade}
-        )
+        `)
           div= 'a'
         div(class=`
           flex
           flex-col
           justify-center
-        )
+        `)
           +label(`text-${shade}`)
           +label(`border-${shade}`)
     
@@ -81,12 +81,12 @@ include /_mixins/index.pug
           border-1
           border-${shade}-${hue}
           text-${shade}-${hue}
-        )
+        `)
           div= 'a'
         div(class=`
           flex
           flex-col
           justify-center
-        )
+        `)
           +label(`text-${shade}-${hue}`)
           +label(`border-${shade}-${hue}`)
