@@ -19,7 +19,7 @@ include /_mixins/index.pug
           flex-shrink-0
           w-2b
           h-2b
-          rounded-2b
+          rounded
           bg-${shade}
         `)
         +label(`bg-${shade}`)
@@ -33,7 +33,7 @@ include /_mixins/index.pug
             flex-shrink-0
             w-2b
             h-2b
-            rounded-1b
+            rounded
             bg-${shade}-${hue}
           `)
           +label(`bg-${shade}-${hue}`)
@@ -51,12 +51,12 @@ include /_mixins/index.pug
           flex-shrink-0
           w-2b
           h-2b
-          rounded-2b
-          border-1
+          rounded
+          border-2
           border-${shade}
           text-${shade}
         `)
-          div= 'a'
+          .font-semibold= 'a'
         div(class=`
           flex
           flex-col
@@ -77,8 +77,8 @@ include /_mixins/index.pug
           flex-shrink-0
           w-2b
           h-2b
-          rounded-2b
-          border-1
+          rounded
+          border-2
           border-${shade}-${hue}
           text-${shade}-${hue}
         `)
