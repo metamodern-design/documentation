@@ -19,10 +19,10 @@
     "update": "updtr"
   },
   "dependencies": {
-    "@metamodern/static": "^0.4.0",
+    "@metamodern/static": "^0.5.0",
     "core-js": "^3.6.4",
     "history": "^4.10.1",
-    "tailwindcss": "^1.1.4",
+    "tailwindcss": "^1.2.0",
     "typeface-barlow": "0.0.71",
     "typeface-barlow-semi-condensed": "0.0.71",
     "typeface-source-code-pro": "^1.1.3"
