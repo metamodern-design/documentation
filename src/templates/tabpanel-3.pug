@@ -12,7 +12,8 @@ include /_mixins/index.pug
     
     h2#hues= 'Hues'
     
-    != content.colorPaletteHues
+    .mb-2b
+      != content.colorPaletteHues
     
     each hue in colorPalette.hues
       +level('mb-half-b')
@@ -27,12 +28,13 @@ include /_mixins/index.pug
     
     h2#background-colors= 'Background Colors'
     
-    != content.colorPaletteBgColors
+    .mb-2b
+      != content.colorPaletteBgColors
     
     h3= 'gray'
 
     each shade in colorPalette.shades
-      +level('my-1b')
+      +level('mb-half-b')
         div(class=`
           flex-shrink-0
           w-2b
@@ -46,7 +48,7 @@ include /_mixins/index.pug
       h3= hue
       
       each shade in colorPalette.shades
-        +level('my-1b')
+        +level('mb-half-b')
           div(class=`
             flex-shrink-0
             w-2b
@@ -58,7 +60,8 @@ include /_mixins/index.pug
     
     h2#text-border-colors= 'Text & Border Colors'
     
-    != content.colorPaletteTextColors
+    .mb-2b
+      != content.colorPaletteTextColors
     
     h3= 'gray'
 
@@ -106,6 +109,6 @@ include /_mixins/index.pug
             
           +label(`text-${shade}-${hue}`)
           
-    h2#customize= 'Customize Color Palette'
+    h2#customizing= 'Customize Color Palette'
     
     != content.colorPaletteCustomize

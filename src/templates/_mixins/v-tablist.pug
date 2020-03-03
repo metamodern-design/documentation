@@ -30,12 +30,13 @@ mixin vTablist(hue)
           w-full
           px-2b
           border-b
-          border-bright${maybeHue}
+          border-soft${maybeHue}
           font-bold
           text-xs c17_text-sm
           leading-base c17_leading-base-wide
           tracking-wide
           uppercase
-          text-left 
+          text-left
+          ${(i === 0) ? 
         `
       )= route.label
