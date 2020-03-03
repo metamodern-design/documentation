@@ -19,7 +19,8 @@ include /_mixins/index.pug
       +label('1c → 68px')
     
     != content.layoutLede2
-        
+  
+  section
     h2#base-units= 'Base Units'
 
     != content.layoutBaseUnits
@@ -57,7 +58,8 @@ include /_mixins/index.pug
         +label(`${i}c`)
         
     p.font-semibold.italic= '... up to 20c'
-        
+  
+  section
     h2#relative-proportions= 'Relative Proportions'
     
     != content.layoutRelativeProportions
@@ -71,7 +73,7 @@ include /_mixins/index.pug
           .h-1b.bg-soft-red(class=`w-${i}`)
         +label(i)
       
-  
+  section
     h2#responsive-design= 'Responsive Design'
     
     != content.layoutResponsiveDesign

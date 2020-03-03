@@ -2,7 +2,7 @@ include /_mixins/index.pug
 
 
 +tabpanel('3', routes[3].label)
-  section.px-1b
+  section
     +toc()
       != content.colorPaletteToc
   
@@ -26,7 +26,8 @@ include /_mixins/index.pug
             bg-bright-${hue}
           `)
           +label(hue)
-    
+  
+  section
     h2#background-colors= 'Background Colors'
     
     .mb-2b
@@ -46,10 +47,10 @@ include /_mixins/index.pug
           `)
           +label(`bg-${shade}`)
     
-    .mb-2b
-      each hue in colorPalette.hues
-        h3= hue
-        
+    each hue in colorPalette.hues
+      h3= hue
+      
+      .mb-2b  
         each shade in colorPalette.shades
           +level('mb-half-b')
             div(class=`
@@ -60,7 +61,8 @@ include /_mixins/index.pug
               bg-${shade}-${hue}
             `)
             +label(`bg-${shade}-${hue}`)
-    
+  
+  section
     h2#text-border-colors= 'Text & Border Colors'
     
     .mb-2b
@@ -87,10 +89,10 @@ include /_mixins/index.pug
           
           +label(`text-${shade}`)
 
-    .mb-2b
-      each hue in colorPalette.hues
-        h3= hue
+    each hue in colorPalette.hues
+      h3= hue
         
+      .mb-2b
         each shade in colorPalette.shades
           +level('mb-half-b')
             div(class=`
@@ -108,7 +110,8 @@ include /_mixins/index.pug
               .font-semibold= 'a'
               
             +label(`text-${shade}-${hue}`)
-          
+  
+  section
     h2#customizing= 'Customize Color Palette'
     
     .mb-2b

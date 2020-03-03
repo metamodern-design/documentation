@@ -8,7 +8,8 @@ include /_mixins/index.pug
   
   section  
     +lede()
-    
+  
+  section
     h2#size= 'Size'
     
     each i in ['xs', 'sm', 'base', 'lg', 'xl', '2xl', '3xl', '4xl', '5xl', '6xl']
@@ -25,7 +26,8 @@ include /_mixins/index.pug
             text-${i}
             leading-${i}${j}
           `)= `leading-${i}${j}`
-    
+  
+  section
     h2#family= 'Family'
     
     each category in ['Sans', 'Condensed', 'Serif', 'Mono']
@@ -36,7 +38,8 @@ include /_mixins/index.pug
           li.mb-half-b
             +extLink(url)
               +label(`font-${name}`)
-    
+  
+  section
     h2#weight= 'Weight'
     
     +label('font-regular → 400')
