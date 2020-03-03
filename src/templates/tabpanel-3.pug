@@ -7,7 +7,7 @@ include /_mixins/index.pug
       != content.colorPaletteToc
   
   section  
-    +lede()
+    +lede('mb-2b')
       != content.colorPaletteLede
     
     h2#hues= 'Hues'
@@ -32,7 +32,7 @@ include /_mixins/index.pug
     h3= 'gray'
 
     each shade in colorPalette.shades
-      +level('mb-half-b')
+      +level('my-1b')
         div(class=`
           flex-shrink-0
           w-2b
@@ -46,7 +46,7 @@ include /_mixins/index.pug
       h3= hue
       
       each shade in colorPalette.shades
-        +level('mb-half-b')
+        +level('my-1b')
           div(class=`
             flex-shrink-0
             w-2b
@@ -105,3 +105,7 @@ include /_mixins/index.pug
             .font-semibold= 'a'
             
           +label(`text-${shade}-${hue}`)
+          
+    h2#customize= 'Customize Color Palette'
+    
+    != content.colorPaletteCustomize
