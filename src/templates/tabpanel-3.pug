@@ -8,8 +8,11 @@ include /_mixins/index.pug
   
   section  
     +lede()
+      != content.colorPaletteLede
     
     h2#hues= 'Hues'
+    
+    != content.colorPaletteHues
     
     each hue in colorPalette.hues
       +level('mb-half-b')
@@ -23,6 +26,8 @@ include /_mixins/index.pug
         +label(hue)
     
     h2#background-colors= 'Background Colors'
+    
+    != content.colorPaletteBgColors
     
     h3= 'gray'
 
@@ -52,6 +57,8 @@ include /_mixins/index.pug
           +label(`bg-${shade}-${hue}`)
     
     h2#text-border-colors= 'Text & Border Colors'
+    
+    != content.colorPaletteTextColors
     
     h3= 'gray'
 

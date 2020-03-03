@@ -1,0 +1,2 @@
+The *light* and *lighter* shades work best as page or panel backgrounds for light UI themes. The *dark* and *darker* shades work best as page or panel backgrounds for dark UI themes. The intermediate shade/tone variations are typically used for highlight and accent colors, as well as to draw attention to interactive elements like buttons and tabs.
+ 

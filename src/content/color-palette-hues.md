@@ -1,0 +1,1 @@
+The 12 named hues include the three primary hues (red, yellow, blue), three secondary hues (orange, green, and purple), and six tertiary hues (red-orange, yellow-orange, yellow-green, blue-green, blue-purple, red-purple).
