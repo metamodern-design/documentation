@@ -15,6 +15,6 @@
   label: 'Color Palette'
   template: 'tabpanel-3.pug'
 -
-  url: '/customization'
-  label: 'Customization'
+  url: '/responsive-design'
+  label: 'Responsive Design'
   template: 'tabpanel-4.pug'

@@ -31,21 +31,8 @@ include /_mixins/index.pug
     
     != content.colorPaletteBgColors
     
-    h3.mt-2b= 'gray'
-    
-    each shade in colorPalette.shades
-      +level('mb-half-b')
-        div(class=`
-          flex-shrink-0
-          w-2b
-          h-2b
-          rounded
-          bg-${shade}
-        `)
-        +label(`bg-${shade}`)
-    
-    each hue in colorPalette.hues
-      h3.mt-2b= hue
+    .mt-2b
+      h3= 'gray'
       
       each shade in colorPalette.shades
         +level('mb-half-b')
@@ -54,38 +41,33 @@ include /_mixins/index.pug
             w-2b
             h-2b
             rounded
-            bg-${shade}-${hue}
+            bg-${shade}
           `)
-          +label(`bg-${shade}-${hue}`)
+          +label(`bg-${shade}`)
+    
+    each hue in colorPalette.hues
+      .mt-2b
+        h3= hue
+        
+        each shade in colorPalette.shades
+          +level('mb-half-b')
+            div(class=`
+              flex-shrink-0
+              w-2b
+              h-2b
+              rounded
+              bg-${shade}-${hue}
+            `)
+            +label(`bg-${shade}-${hue}`)
   
   section
     h2#text-border-colors= 'Text & Border Colors'
     
     != content.colorPaletteTextColors
     
-    h3.mt-2b= 'gray'
-    
-    each shade in colorPalette.shades
-      +level('mb-half-b')
-        div(class=`
-          flex
-          items-center
-          justify-center
-          flex-shrink-0
-          w-2b
-          h-2b
-          rounded
-          border-2
-          border-${shade}
-          text-${shade}
-        `)
-          .font-semibold= 'a'
-        
-        +label(`text-${shade}`)
-
-    each hue in colorPalette.hues
-      h3.mt-2b= hue
-        
+    .mt-2b
+      h3= 'gray'
+      
       each shade in colorPalette.shades
         +level('mb-half-b')
           div(class=`
@@ -97,12 +79,34 @@ include /_mixins/index.pug
             h-2b
             rounded
             border-2
-            border-${shade}-${hue}
-            text-${shade}-${hue}
+            border-${shade}
+            text-${shade}
           `)
             .font-semibold= 'a'
-            
-          +label(`text-${shade}-${hue}`)
+          
+          +label(`text-${shade}`)
+
+    each hue in colorPalette.hues
+      .mt-2b
+        h3= hue
+          
+        each shade in colorPalette.shades
+          +level('mb-half-b')
+            div(class=`
+              flex
+              items-center
+              justify-center
+              flex-shrink-0
+              w-2b
+              h-2b
+              rounded
+              border-2
+              border-${shade}-${hue}
+              text-${shade}-${hue}
+            `)
+              .font-semibold= 'a'
+              
+            +label(`text-${shade}-${hue}`)
   
   section
     h2#customizing= 'Customize Color Palette'
