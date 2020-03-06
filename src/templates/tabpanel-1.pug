@@ -11,12 +11,12 @@ include /_mixins/index.pug
       != content.layoutLede1
       
     +level('mb-half-b')
-      .w-1b.h-1b.bg-darker
-      +label('1b → 17px')
+      .w-1b.h-1b.bg-dark
+      +label('1b → 16px')
         
     +level('mb-one-and-half-b')
-      .w-1c.h-1b.bg-darker
-      +label('1c → 68px')
+      .w-1c.h-1b.bg-dark
+      +label('1c → 64px')
     
     != content.layoutLede2
   
@@ -27,7 +27,7 @@ include /_mixins/index.pug
   
     each i in ['quarter-', 'half-', 1, 'one-and-half-', 2, 'two-and-half-', 3, 4, 5, 6, 7, 8]
       +level('mb-half-b')
-        .h-1b.bg-darker(class=`w-${i}b`)
+        .h-1b.bg-dark(class=`w-${i}b`)
         +label(`${i}b`)
   
   section
@@ -37,7 +37,7 @@ include /_mixins/index.pug
     
     each i in [1, 2, 3]
       +level('mb-half-b')
-        .h-1b.bg-darker(class=`w-${i}c`)
+        .h-1b.bg-dark(class=`w-${i}c`)
         +label(`${i}c`)
     
     each i in [4, 5, 6]
@@ -46,7 +46,7 @@ include /_mixins/index.pug
         items-center
         mb-half-b
       `)
-        .h-1b.bg-darker(class=`w-${i}c`)
+        .h-1b.bg-dark(class=`w-${i}c`)
         +label(`${i}c`)
         
     each i in [7, 8, 9]
@@ -55,7 +55,7 @@ include /_mixins/index.pug
         items-center
         mb-half-b
       `)
-        .h-1b.bg-darker(class=`w-${i}c`)
+        .h-1b.bg-dark(class=`w-${i}c`)
         +label(`${i}c`)
         
     p.font-semibold.italic= '... up to 20c'
@@ -73,14 +73,3 @@ include /_mixins/index.pug
         `)
           .h-1b.bg-soft-red(class=`w-${i}`)
         +label(i)
-      
-  section
-    h2#responsive-design= 'Responsive Design'
-    
-    != content.layoutResponsiveDesign
-    
-    p.mb-half-b
-      +label('c11 → 748px (tablet+)')
-
-    p
-      +label('c17 → 1156px (laptop+)')

@@ -3,3 +3,12 @@ include /_mixins/index.pug
 
 +tabpanel('4', routes[4].label)
   section
+    h2#responsive-design= 'Responsive Design'
+    
+    != content.layoutResponsiveDesign
+    
+    p.mb-half-b
+      +label('c11 → 704px (tablet+)')
+
+    p
+      +label('c17 → 1088px (laptop+)')
