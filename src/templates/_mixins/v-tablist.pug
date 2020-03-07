@@ -12,7 +12,7 @@ mixin vTablist(hue)
       c17_rounded
       border-soft${maybeHue}
       bg-light${maybeHue}
-      text-medium-dark${maybeHue}
+      text-dark${maybeHue}
     `
   )
     each route, i in routes
@@ -30,7 +30,7 @@ mixin vTablist(hue)
         class=`
           w-full
           px-2b
-          ${(i < routes.length - 1) ? 'border-b' : ''}
+          border-b ${(i === routes.length - 1) ? 'c17_border-b-0' : ''}
           border-soft${maybeHue}
           font-bold
           text-xs c17_text-sm
