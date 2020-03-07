@@ -12,20 +12,6 @@ const assets = typefaces.map((name) => [
 ]);
 
 
-const designSystemConfig = {
-  variants: {
-    borderWidth: ['responsive'],
-    borderRadius: ['responsive'],
-    display: ['responsive'],
-    fontSize: ['responsive'],
-    lineHeight: ['responsive'],
-    margin: ['responsive'],
-    padding: ['responsive'],
-    width: ['responsive'],
-  },
-};
-
-
 const postcss = {
   external: typefaces,
 };
@@ -63,11 +49,25 @@ const bgPalette = new Map([
 ]);
 
 
+const designSystemConfig = {
+  bgPalette,
+  variants: {
+    borderWidth: ['responsive'],
+    borderRadius: ['responsive'],
+    display: ['responsive'],
+    fontSize: ['responsive'],
+    lineHeight: ['responsive'],
+    margin: ['responsive'],
+    padding: ['responsive'],
+    width: ['responsive'],
+  },
+};
+
+
 const metamodernConfig = {
   assets,
   designSystemConfig,
   postcss,
-  designSystemConfig: { bgPalette },
 };
 
 
