@@ -31,10 +31,25 @@ const postcss = {
 };
 
 
+const bgPalette = new Map([
+  ['lighter', _lsh(92)(25)],
+  ['light', _lsh(87)(40)],
+  ['medium-light', _lsh(77)(55)],
+  ['softer', _lsh(67)(55)],
+  ['bright', _lsh(62)(70)],
+  ['soft', _lsh(52)(40)],
+  ['medium', _lsh(47)(70)],
+  ['medium-dark', _lsh(32)(40)],
+  ['dark', _lsh(22)(25)],
+  ['darker', _lsh(17)(25)],
+]);
+
+
 const metamodernConfig = {
   assets,
   designSystemConfig,
   postcss,
+  bgPalette,
 };
 
 
