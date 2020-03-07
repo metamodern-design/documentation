@@ -11,11 +11,11 @@ include /_mixins/index.pug
       != content.layoutLede1
       
     +level('mb-half-b')
-      .w-1b.h-1b.bg-dark
+      .w-1b.h-1b.bg-medium-dark
       +label('1b → 16px')
         
     +level('mb-one-and-half-b')
-      .w-1c.h-1b.bg-dark
+      .w-1c.h-1b.bg-medium-dark
       +label('1c → 64px')
     
     != content.layoutLede2
@@ -27,7 +27,7 @@ include /_mixins/index.pug
   
     each i in ['quarter-', 'half-', 1, 'one-and-half-', 2, 'two-and-half-', 3, 4, 5, 6, 7, 8]
       +level('mb-half-b')
-        .h-1b.bg-dark(class=`w-${i}b`)
+        .h-1b.bg-medium-dark(class=`w-${i}b`)
         +label(`${i}b`)
   
   section
@@ -37,7 +37,7 @@ include /_mixins/index.pug
     
     each i in [1, 2, 3]
       +level('mb-half-b')
-        .h-1b.bg-dark(class=`w-${i}c`)
+        .h-1b.bg-medium-dark(class=`w-${i}c`)
         +label(`${i}c`)
     
     each i in [4, 5, 6]
@@ -46,7 +46,7 @@ include /_mixins/index.pug
         items-center
         mb-half-b
       `)
-        .h-1b.bg-dark(class=`w-${i}c`)
+        .h-1b.bg-medium-dark(class=`w-${i}c`)
         +label(`${i}c`)
         
     each i in [7, 8, 9]
@@ -55,7 +55,7 @@ include /_mixins/index.pug
         items-center
         mb-half-b
       `)
-        .h-1b.bg-dark(class=`w-${i}c`)
+        .h-1b.bg-medium-dark(class=`w-${i}c`)
         +label(`${i}c`)
         
     p.font-semibold.italic= '... up to 20c'
@@ -69,7 +69,7 @@ include /_mixins/index.pug
       +level('mb-half-b')
         div(class=`
           w-2c c11_w-4c c17_w-6c 
-          bg-darker
+          bg-medium-dark
         `)
-          .h-1b.bg-soft-red(class=`w-${i}`)
+          .h-1b.bg-softer-red(class=`w-${i}`)
         +label(i)
