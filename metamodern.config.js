@@ -67,7 +67,7 @@ const metamodernConfig = {
   assets,
   designSystemConfig,
   postcss,
-  bgPalette,
+  designSystemConfig: { bgPalette },
 };
 
 
