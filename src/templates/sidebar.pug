@@ -3,13 +3,14 @@ include /_mixins/index.pug
 
 header#pageHeader(class=`
   w-screen c11_w-full
+  pt-4b
 `)
   div(class=`
     flex
     items-center
     max-w-5c
     px-1b
-    py-2b c17_py-3b
+    mb-4b
   `)
     figure
       img(
@@ -19,18 +20,17 @@ header#pageHeader(class=`
   
   div(class=`
     px-1b
-    pb-2b c17_pb-3b
+    mb-4b
     text-lighter-blue-purple
   `)
     p(class=`
-      font-bold
+      font-semibold
       text-lg c17_text-xl
-      leading-lg-wide c17_leading-xl-wide
+      leading-lg
     `)= 'Design System'
     
     p(class=`
       font-barlow-semi-condensed
-      font-medium
       text-sm c17_text-base
       leading-sm-narrow c17_leading-base-narrow
     `)= 'An approach to layout, typography & color with TailwindCSS'
@@ -38,6 +38,6 @@ header#pageHeader(class=`
   nav#pageNav(class=`
     w-screen c11_w-full
     c17_px-1b
-    c11_pb-2b c17_pb-3b
+    c11_mb-4b
   `)
     +vTablist('blue-purple')
