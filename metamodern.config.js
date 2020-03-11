@@ -25,12 +25,12 @@ const bgPalette = new Map([
   ['light', _lsh(87)(40)],
   ['medium-light', _lsh(77)(55)],
   ['bright', _lsh(62)(85)],
-  ['softer', _lsh(62)(55)],
-  ['soft', _lsh(52)(40)],
+  ['soft', _lsh(62)(55)],
+  ['softer', _lsh(57)(40)],
   ['medium', _lsh(47)(70)],
-  ['medium-dark', _lsh(32)(40)],
-  ['dark', _lsh(22)(25)],
-  ['darker', _lsh(17)(25)],
+  ['medium-dark', _lsh(32)(55)],
+  ['dark', _lsh(22)(40)],
+  ['darker', _lsh(17)(40)],
 ]);
 
 
