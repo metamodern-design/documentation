@@ -19,8 +19,7 @@
     "update": "updtr"
   },
   "dependencies": {
-    "@metamodern/color-system": "^0.8.0",
-    "@metamodern/static": "^0.6.0",
+    "@metamodern/static": "^0.7.0",
     "core-js": "^3.6.4",
     "history": "^4.10.1",
     "tailwindcss": "^1.2.0",
