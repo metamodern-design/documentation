@@ -21,25 +21,12 @@ html(lang='en')
     text-sm c17_text-base
     leading-sm c17_leading-base
   `)
-    .sidebar(class=`
+    .sidebar#pageSidebar(class=`
       c11_border-r
       border-darker-blue-purple
       bg-darker-blue-purple
     `)
-      header#pageHeader(class=`
-        w-screen c11_w-full
-        px-1b
-        py-2b c17_py-3b
-        px-1b
-      `)
-        include /header.pug
-
-      nav#pageNav(class=`
-        w-screen c11_w-full
-        c17_px-1b
-        c11_pb-2b
-      `)
-        include /nav.pug
+      include /sidebar.pug
         
     main#pageMain(class=`
       w-screen

@@ -1,0 +1,44 @@
+include /_mixins/index.pug
+
+
+header#pageHeader(class=`
+  w-screen c11_w-full
+`)
+  div(class=`
+    flex
+    items-center
+    max-w-5c
+    h-4b
+    px-1b
+    py-2b c17_py-3b
+  `)
+    figure
+      img(
+        src='media/metamodern-logo.svg'
+        alt='Metamodern open source'
+      )
+  
+  div(class=`
+    px-1b
+    pb-2b c17_pb-3b
+    text-lighter-blue-purple
+  `)
+    p(class=`
+      font-bold
+      text-lg c17_text-xl
+      leading-lg-wide c17_leading-xl-wide
+    `)= 'Design System'
+    
+    p(class=`
+      font-barlow-semi-condensed
+      font-medium
+      text-sm c17_text-base
+      leading-sm-narrow c17_leading-base-narrow
+    `)= 'An approach to layout, typography & color with TailwindCSS'
+
+  nav#pageNav(class=`
+    w-screen c11_w-full
+    c17_px-1b
+    c11_pb-2b c17_pb-3b
+  `)
+    +vTablist('blue-purple')
