@@ -7,8 +7,6 @@ header#pageHeader(class=`
   c11_pb-4b
 `)
   div(class=`
-    flex
-    items-center
     max-w-5c
     px-1b
     pb-2b c17_pb-3b
@@ -20,23 +18,24 @@ header#pageHeader(class=`
         alt='Metamodern open source'
       )
   
-  div(class=`
+  p(class=`
     px-1b
-    pb-2b
-    c17_mb-half-b
+    -mt-half-b
     text-lighter-blue-purple
-  `)
-    p(class=`
-      font-semibold
-      text-lg c17_text-xl
-      leading-lg
-    `)= 'Design System'
-    
-    p(class=`
-      font-barlow-semi-condensed
-      text-sm c17_text-base
-      leading-sm-narrow c17_leading-base-narrow
-    `)= 'An approach to layout, typography & color with TailwindCSS'
+    font-semibold
+    text-lg c17_text-xl
+    leading-lg
+  `)= 'Design System'
+  
+  p(class=`
+    px-1b
+    pb-2b c17_pb-3b
+    c17_-mb-half-b
+    text-lighter-blue-purple
+    font-barlow-semi-condensed
+    text-sm c17_text-base
+    leading-sm-narrow c17_leading-base-narrow
+  `)= 'An approach to layout, typography & color with TailwindCSS'
 
   nav#pageNav(class=`
     w-screen c11_w-full
