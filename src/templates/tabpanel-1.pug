@@ -2,12 +2,11 @@ include /_mixins/index.pug
 
 
 +tabpanel('1', routes[1].label)
-  section
-    +toc()
-      != content.layoutToc
+  +toc()
+    != content.layoutToc
   
   section  
-    +lede('pb-2b')
+    +lede('pb-2b c17_-mt-quarter-b c17_mb-quarter-b')
       != content.layoutLede1
       
     +level('mb-half-b')
