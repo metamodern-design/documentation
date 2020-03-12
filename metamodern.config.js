@@ -1,5 +1,5 @@
 import pkg from './package.json';
-import colorSystem from '@metamodern/color-system'
+
 
 const typefaces = Object.keys(pkg.dependencies).filter(
   (str) => str.startsWith('typeface-'),
