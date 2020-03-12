@@ -2,9 +2,8 @@ include /_mixins/index.pug
 
 
 +tabpanel('2', routes[2].label)
-  section
-    +toc()
-      != content.typographyToc
+  +toc()
+    != content.typographyToc
   
   section  
     +lede()
