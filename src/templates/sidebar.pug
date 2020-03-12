@@ -23,7 +23,8 @@ header#pageHeader(class=`
     font-semibold
     text-lg c17_text-xl
     leading-lg-narrow c17_leading-xl-narrow
-    -mt-half-b
+    -mt-quarter-b
+    mb-quarter-b
   `)= 'Design System'
   
   p(class=`
@@ -33,8 +34,9 @@ header#pageHeader(class=`
     font-barlow-semi-condensed
     text-sm c17_text-base
     leading-sm-narrow c17_leading-base-narrow
-    -mt-quarter-b
-  `)= 'An approach to layout, typography & color with TailwindCSS'
+    `
+    style=`margin-top:-2px;margin-bottom:2px`
+  )= 'An approach to layout, typography & color with TailwindCSS'
 
   nav#pageNav(class=`
     w-screen c11_w-full
