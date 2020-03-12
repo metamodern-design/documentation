@@ -3,11 +3,16 @@ mixin tabpanel(id, heading)
     id=`main-tabpanel-${id}`
     role='tabpanel'
     aria-labelledby=`nav-tab-${id}`
-    class=`
-      typeset
-      px-1b
-    `
   )
-    h1= heading
+    h1(class=`
+      px-1b
+      text-lg c17_text-xl
+      leading-xl-wide
+      mb-half-b c17_mb-one-and-half-b
+    `)= heading
 
-    block
+    div(class=`
+      px-1b
+      typeset
+    `)
+      block
