@@ -5,9 +5,8 @@ include /_mixins/index.pug
   +toc()
     != content.typographyToc
   
-  section  
-    +lede()
-      != content.typographyLede
+  +lede()
+    != content.typographyLede
   
   section
     h2#size= 'Size'

@@ -4,11 +4,11 @@ include /_mixins/index.pug
 +tabpanel('3', routes[3].label)
   +toc()
     != content.colorPaletteToc
+
+  +lede()
+    != content.colorPaletteLede
   
-  section  
-    +lede('mb-2b')
-      != content.colorPaletteLede
-    
+  section
     h2#hues= 'Hues'
     
     != content.colorPaletteHues

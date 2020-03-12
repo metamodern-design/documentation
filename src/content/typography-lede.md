@@ -1,1 +1,1 @@
-Compared with Tailwind defaults, Metamodern's typography scale starts with a larger base size and increases by greater proportions. Leadings (or line-heights) are defined to exact pixel values on the same scale as font sizes, with narrow and wide options.
+Compared with Tailwind defaults, Metamodern's typography scale starts with a larger base size and increases by greater proportions. Leadings, or line-heights, are defined to exact pixel values on the same scale as font sizes, with narrow and wide options.
