@@ -11,22 +11,31 @@ include /_mixins/index.pug
   section
     h2#size= 'Size'
     
-    != content.typographySize
+    .mb-2b
+      != content.typographySize
     
     each i in ['xs', 'sm', 'base', 'lg', 'xl', '2xl', '3xl', '4xl', '5xl', '6xl']
       p(class=`text-${i}` style='line-height: 1')= `text-${i}`
     
+  section
     h2#leading= 'Leading'
     
+    .mb-2b
+      != content.typographyLeading
+
     each rows, i in {xs: 3, sm: 4, base: 4, lg: 4, xl: 5}
+      h3= i
+
       each j in ['', '-narrow', '-wide']
         +gridlines(rows)
           div(class=`
             px-half-b mx-1b
-            bg-light-red-orange
+            bg-medium-light-red-orange
             text-${i}
             leading-${i}${j}
           `)= `leading-${i}${j}`
+    
+    p.font-semibold.italic= '... up to leading-6xl[-narrow|-wide]'
   
   section
     h2#family= 'Family'
