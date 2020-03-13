@@ -1,4 +1,3 @@
 - [Base Units](#base-units)
 - [Column Units](#column-units)
 - [Relative Proportions](#relative-proportions)
-- [Responsive Design](#responsive-design)

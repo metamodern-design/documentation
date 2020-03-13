@@ -11,6 +11,8 @@ include /_mixins/index.pug
   section
     h2#size= 'Size'
     
+    != content.typographySize
+    
     each i in ['xs', 'sm', 'base', 'lg', 'xl', '2xl', '3xl', '4xl', '5xl', '6xl']
       p(class=`text-${i}` style='line-height: 1')= `text-${i}`
     
