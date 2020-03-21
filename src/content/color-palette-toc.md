@@ -1,4 +1,4 @@
 - [Hues](#hues)
-- [Background Colors](#background-colors)
-- [Text & Border Colors](#text-border-colors)
+- [Shade/Tone Variations](#shade-tone-variations)
+- [Grays](#grays)
 - [Customizing](#customizing)

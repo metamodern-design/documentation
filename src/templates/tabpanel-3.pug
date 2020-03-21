@@ -35,7 +35,7 @@ include /_mixins/index.pug
       .mt-2b
         h3= hue
         
-        each shade in ['lighter', 'light', 'medium-light']
+        each shade in ['lighter', 'light', 'medium-light', 'bright']
           +level('mb-half-b')
             +square(`bg-${shade}-${hue} text-darker`)
               .font-semibold= 'a'
@@ -45,7 +45,7 @@ include /_mixins/index.pug
             
             +label(`${shade}-${hue}`)
             
-        each shade in ['bright', 'soft', 'softer', 'medium', 'medium-dark', 'dark', 'darker']
+        each shade in ['soft', 'softer', 'medium', 'medium-dark', 'dark', 'darker']
           +level('mb-half-b')
             +square(`bg-${shade}-${hue} text-white`)
               .font-semibold= 'a'
@@ -72,10 +72,10 @@ include /_mixins/index.pug
           +label(shade)
           
       +level('mb-half-b')
-        +square(`bg-soft text-white`)
+        +square(`bg-soft text-darker`)
           .font-semibold= 'a'
           
-        +square(`ml-half-b border-2 border-soft text-soft`)
+        +square(`ml-half-b border-2 border-soft bg-darker text-soft`)
           .font-semibold= 'a'
         
         +label('bright / soft')
