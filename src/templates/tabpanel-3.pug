@@ -31,7 +31,31 @@ include /_mixins/index.pug
     
     != content.colorPaletteVariations
 
-    each hue in colorPalette.hues
+    each hue in ['red', 'red-orange']
+      .mt-2b
+        h3= hue
+        
+        each shade in ['lighter', 'light', 'medium-light']
+          +level('mb-half-b')
+            +square(`bg-${shade}-${hue} text-darker`)
+              .font-semibold= 'a'
+              
+            +square(`ml-half-b border-2 border-${shade}-${hue} bg-darker text-${shade}-${hue}`)
+              .font-semibold= 'a'
+            
+            +label(`${shade}-${hue}`)
+            
+        each shade in ['bright', 'soft', 'softer', 'medium', 'medium-dark', 'dark', 'darker']
+          +level('mb-half-b')
+            +square(`bg-${shade}-${hue} text-white`)
+              .font-semibold= 'a'
+              
+            +square(`ml-half-b border-2 border-${shade}-${hue} text-${shade}-${hue}`)
+              .font-semibold= 'a'
+            
+            +label(`${shade}-${hue}`)
+            
+    each hue in ['orange', 'yellow-orange', 'yellow', 'yellow-green', 'green']
       .mt-2b
         h3= hue
         
@@ -46,6 +70,30 @@ include /_mixins/index.pug
             +label(`${shade}-${hue}`)
             
         each shade in ['soft', 'softer', 'medium', 'medium-dark', 'dark', 'darker']
+          +level('mb-half-b')
+            +square(`bg-${shade}-${hue} text-white`)
+              .font-semibold= 'a'
+              
+            +square(`ml-half-b border-2 border-${shade}-${hue} text-${shade}-${hue}`)
+              .font-semibold= 'a'
+            
+            +label(`${shade}-${hue}`)
+            
+    each hue in ['blue-green', 'blue', 'blue-purple', 'purple', 'red-purple']
+      .mt-2b
+        h3= hue
+        
+        each shade in ['lighter', 'light', 'medium-light']
+          +level('mb-half-b')
+            +square(`bg-${shade}-${hue} text-darker`)
+              .font-semibold= 'a'
+              
+            +square(`ml-half-b border-2 border-${shade}-${hue} bg-darker text-${shade}-${hue}`)
+              .font-semibold= 'a'
+            
+            +label(`${shade}-${hue}`)
+            
+        each shade in ['bright', 'soft', 'softer', 'medium', 'medium-dark', 'dark', 'darker']
           +level('mb-half-b')
             +square(`bg-${shade}-${hue} text-white`)
               .font-semibold= 'a'
