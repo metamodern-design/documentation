@@ -76,7 +76,6 @@ include /_mixins/index.pug
             flex-shrink-0
             w-2b
             h-2b
-            ml-half-b
             rounded
             bg-${shade}
             text-white
@@ -90,6 +89,7 @@ include /_mixins/index.pug
             flex-shrink-0
             w-2b
             h-2b
+            ml-half-b
             rounded
             border-2
             border-${shade}
@@ -104,7 +104,7 @@ include /_mixins/index.pug
       .mt-2b
         h3= hue
         
-        each shade in ['white', 'near-white', 'lighter', 'light', 'medium-light']
+        each shade in ['lighter', 'light', 'medium-light']
           +level('mb-half-b')
             div(class=`
               flex
@@ -137,7 +137,7 @@ include /_mixins/index.pug
             
             +label(`${shade}-${hue}`)
             
-        each shade in ['bright', 'soft', 'softer', 'medium', 'medium-dark', 'dark', 'darker', 'near-black', 'black']
+        each shade in ['bright', 'soft', 'softer', 'medium', 'medium-dark', 'dark', 'darker']
           +level('mb-half-b')
             div(class=`
               flex
@@ -146,7 +146,6 @@ include /_mixins/index.pug
               flex-shrink-0
               w-2b
               h-2b
-              ml-half-b
               rounded
               bg-${shade}-${hue}
               text-white
@@ -160,6 +159,7 @@ include /_mixins/index.pug
               flex-shrink-0
               w-2b
               h-2b
+              ml-half-b
               rounded
               border-2
               border-${shade}-${hue}
