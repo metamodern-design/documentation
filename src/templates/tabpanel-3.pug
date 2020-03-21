@@ -25,150 +25,70 @@ include /_mixins/index.pug
           `)
           
           +label(hue)
-  
+    
   section
-    h2#background-colors= 'Background Colors'
+    h2#shade-tone-variations= 'Shade/Tone Variations'
     
-    != content.colorPaletteBgColors
-    
-    .mt-2b
-      h3= 'gray'
-      
-      each shade in ['white', 'near-white', 'lighter', 'light', 'medium-light']
-        +level('mb-half-b')
-          div(class=`
-            flex
-            items-center
-            justify-center
-            flex-shrink-0
-            w-2b
-            h-2b
-            rounded
-            bg-${shade}
-            text-darker
-          `)
-            .font-semibold= 'a'
-            
-          div(class=`
-            flex
-            items-center
-            justify-center
-            flex-shrink-0
-            w-2b
-            h-2b
-            ml-half-b
-            rounded
-            border-2
-            border-${shade}
-            bg-darker
-            text-${shade}
-          `)
-            .font-semibold= 'a'
-          
-          +label(shade)
-          
-      each shade in ['bright', 'soft', 'softer', 'medium', 'medium-dark', 'dark', 'darker', 'near-black', 'black']
-        +level('mb-half-b')
-          div(class=`
-            flex
-            items-center
-            justify-center
-            flex-shrink-0
-            w-2b
-            h-2b
-            rounded
-            bg-${shade}
-            text-white
-          `)
-            .font-semibold= 'a'
-            
-          div(class=`
-            flex
-            items-center
-            justify-center
-            flex-shrink-0
-            w-2b
-            h-2b
-            ml-half-b
-            rounded
-            border-2
-            border-${shade}
-            bg-white
-            text-${shade}
-          `)
-            .font-semibold= 'a'
-          
-          +label(shade)
-    
+    != content.colorPaletteVariations
+
     each hue in colorPalette.hues
       .mt-2b
         h3= hue
         
         each shade in ['lighter', 'light', 'medium-light']
           +level('mb-half-b')
-            div(class=`
-              flex
-              items-center
-              justify-center
-              flex-shrink-0
-              w-2b
-              h-2b
-              rounded
-              bg-${shade}-${hue}
-              text-darker
-            `)
+            +square(`bg-${shade}-${hue} text-darker`)
               .font-semibold= 'a'
               
-            div(class=`
-              flex
-              items-center
-              justify-center
-              flex-shrink-0
-              w-2b
-              h-2b
-              ml-half-b
-              rounded
-              border-2
-              border-${shade}-${hue}
-              bg-darker
-              text-${shade}-${hue}
-            `)
+            +square(`ml-half-b border-2 border-${shade}-${hue} bg-darker text-${shade}-${hue}`)
               .font-semibold= 'a'
             
             +label(`${shade}-${hue}`)
             
         each shade in ['bright', 'soft', 'softer', 'medium', 'medium-dark', 'dark', 'darker']
           +level('mb-half-b')
-            div(class=`
-              flex
-              items-center
-              justify-center
-              flex-shrink-0
-              w-2b
-              h-2b
-              rounded
-              bg-${shade}-${hue}
-              text-white
-            `)
+            +square(`bg-${shade}-${hue} text-white`)
               .font-semibold= 'a'
               
-            div(class=`
-              flex
-              items-center
-              justify-center
-              flex-shrink-0
-              w-2b
-              h-2b
-              ml-half-b
-              rounded
-              border-2
-              border-${shade}-${hue}
-              bg-white
-              text-${shade}-${hue}
-            `)
+            +square(`ml-half-b border-2 border-${shade}-${hue} text-${shade}-${hue}`)
               .font-semibold= 'a'
             
             +label(`${shade}-${hue}`)
+  
+  section
+    h2#grays= 'Grays'
+    
+    != content.colorPaletteGrays
+    
+    .mt-2b
+      each shade in ['white', 'near-white', 'lighter', 'light', 'medium-light']
+        +level('mb-half-b')
+          +square(`bg-${shade} text-darker`)
+            .font-semibold= 'a'
+            
+          +square(`ml-half-b border-2 border-${shade} bg-darker text-${shade}`)
+            .font-semibold= 'a'
+          
+          +label(shade)
+          
+      +level('mb-half-b')
+        +square(`bg-soft text-white`)
+          .font-semibold= 'a'
+          
+        +square(`ml-half-b border-2 border-soft text-soft`)
+          .font-semibold= 'a'
+        
+        +label('bright / soft')
+          
+      each shade in ['softer', 'medium', 'medium-dark', 'dark', 'darker', 'near-black', 'black']
+        +level('mb-half-b')
+          +square(`bg-${shade} text-white`)
+            .font-semibold= 'a'
+            
+          +square(`ml-half-b border-2 border-${shade} text-${shade}`)
+            .font-semibold= 'a'
+          
+          +label(shade)
   
   section
     h2#customizing= 'Customize Color Palette'
