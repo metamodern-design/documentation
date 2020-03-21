@@ -1,1 +1,1 @@
-Metamodern's design system uses Tailwind's [default font-weight classes](https://tailwindcss.com/docs/font-weight/), but includes *font-regular* as an alias for *font-normal* (400) to better conform to the terminology used in many typography systems.
+Metamodern's design system uses [Tailwind's default font-weight classes](https://tailwindcss.com/docs/font-weight/), but includes *font-regular* as an alias for *font-normal* (400) to better conform to the terminology used in many typography systems.

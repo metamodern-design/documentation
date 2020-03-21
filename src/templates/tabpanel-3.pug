@@ -23,6 +23,7 @@ include /_mixins/index.pug
             rounded
             bg-bright-${hue}
           `)
+          
           +label(hue)
   
   section
@@ -42,6 +43,21 @@ include /_mixins/index.pug
             rounded
             bg-${shade}
           `)
+          
+          div(class=`
+            flex
+            items-center
+            justify-center
+            flex-shrink-0
+            w-2b
+            h-2b
+            rounded
+            border-2
+            border-${shade}
+            text-${shade}
+          `)
+            .font-semibold= 'a'
+          
           +label(`bg-${shade}`)
     
     each hue in colorPalette.hues
@@ -57,6 +73,21 @@ include /_mixins/index.pug
               rounded
               bg-${shade}-${hue}
             `)
+            
+            div(class=`
+              flex
+              items-center
+              justify-center
+              flex-shrink-0
+              w-2b
+              h-2b
+              rounded
+              border-2
+              border-${shade}-${hue}
+              text-${shade}-${hue}
+            `)
+              .font-semibold= 'a'
+
             +label(`bg-${shade}-${hue}`)
   
   section
