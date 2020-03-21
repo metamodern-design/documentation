@@ -49,7 +49,6 @@ include /_mixins/index.pug
           `)
             .font-semibold= 'a'
             
-          
           div(class=`
             flex
             items-center
@@ -84,7 +83,6 @@ include /_mixins/index.pug
           `)
             .font-semibold= 'a'
             
-          
           div(class=`
             flex
             items-center
@@ -107,72 +105,70 @@ include /_mixins/index.pug
         h3= hue
         
         each shade in ['white', 'near-white', 'lighter', 'light', 'medium-light']
-        +level('mb-half-b')
-          div(class=`
-            flex
-            items-center
-            justify-center
-            flex-shrink-0
-            w-2b
-            h-2b
-            rounded
-            bg-${shade}-${hue}
-            text-darker
-          `)
-            .font-semibold= 'a'
+          +level('mb-half-b')
+            div(class=`
+              flex
+              items-center
+              justify-center
+              flex-shrink-0
+              w-2b
+              h-2b
+              rounded
+              bg-${shade}-${hue}
+              text-darker
+            `)
+              .font-semibold= 'a'
+              
+            div(class=`
+              flex
+              items-center
+              justify-center
+              flex-shrink-0
+              w-2b
+              h-2b
+              ml-half-b
+              rounded
+              border-2
+              border-${shade}-${hue}
+              bg-darker
+              text-${shade}-${hue}
+            `)
+              .font-semibold= 'a'
             
-          
-          div(class=`
-            flex
-            items-center
-            justify-center
-            flex-shrink-0
-            w-2b
-            h-2b
-            ml-half-b
-            rounded
-            border-2
-            border-${shade}-${hue}
-            bg-darker
-            text-${shade}-${hue}
-          `)
-            .font-semibold= 'a'
-          
-          +label(`${shade}-${hue}`)
-          
-      each shade in ['bright', 'soft', 'softer', 'medium', 'medium-dark', 'dark', 'darker', 'near-black', 'black']
-        +level('mb-half-b')
-          div(class=`
-            flex
-            items-center
-            justify-center
-            flex-shrink-0
-            w-2b
-            h-2b
-            ml-half-b
-            rounded
-            bg-${shade}-${hue}
-            text-white
-          `)
-            .font-semibold= 'a'
+            +label(`${shade}-${hue}`)
             
-          
-          div(class=`
-            flex
-            items-center
-            justify-center
-            flex-shrink-0
-            w-2b
-            h-2b
-            rounded
-            border-2
-            border-${shade}-${hue}
-            bg-white
-            text-${shade}-${hue}
-          `)
-            .font-semibold= 'a'
-          
-          +label(`${shade}-${hue}`)
+        each shade in ['bright', 'soft', 'softer', 'medium', 'medium-dark', 'dark', 'darker', 'near-black', 'black']
+          +level('mb-half-b')
+            div(class=`
+              flex
+              items-center
+              justify-center
+              flex-shrink-0
+              w-2b
+              h-2b
+              ml-half-b
+              rounded
+              bg-${shade}-${hue}
+              text-white
+            `)
+              .font-semibold= 'a'
+              
+            div(class=`
+              flex
+              items-center
+              justify-center
+              flex-shrink-0
+              w-2b
+              h-2b
+              rounded
+              border-2
+              border-${shade}-${hue}
+              bg-white
+              text-${shade}-${hue}
+            `)
+              .font-semibold= 'a'
+            
+            +label(`${shade}-${hue}`)
   
   section
     h2#customizing= 'Customize Color Palette'
