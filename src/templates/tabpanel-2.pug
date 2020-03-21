@@ -40,7 +40,8 @@ include /_mixins/index.pug
   section
     h2#family= 'Family'
     
-    != content.typographyFamily
+    .mb-2b
+      != content.typographyFamily
     
     each category in ['Sans', 'Condensed', 'Serif', 'Mono']
       h3= category
@@ -54,7 +55,8 @@ include /_mixins/index.pug
   section
     h2#weight= 'Weight'
     
-    != content.typographyFamily
+    .mb-2b
+      != content.typographyWeight
     
     +label('font-regular → 400')
     
