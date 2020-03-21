@@ -1,0 +1,1 @@
+Using a shade/tone name without a hue gives you a shade of gray. Note that *bright* and *soft* have the same lightness. The gray scale also includes four additional shades: *white* is pure white, *near-white* is one shade above *lighter*, *black* is pure black, *near-black* is one shade below *darker*.
