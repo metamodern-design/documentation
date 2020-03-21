@@ -35,10 +35,12 @@ include /_mixins/index.pug
             leading-${i}${j}
           `)= `leading-${i}${j}`
     
-    p.font-semibold.italic= '... up to leading-6xl[-narrow|-wide]'
+    p.font-semibold.italic= '... up to 6xl'
   
   section
     h2#family= 'Family'
+    
+    != content.typographyFamily
     
     each category in ['Sans', 'Condensed', 'Serif', 'Mono']
       h3= category
