@@ -11,10 +11,14 @@
   label: 'Typography'
   template: 'tabpanel-2.pug'
 -
+  url: '/borders'
+  label: 'Borders'
+  template: 'tabpanel-3.pug'
+-
   url: '/color-palette'
   label: 'Color Palette'
-  template: 'tabpanel-3.pug'
+  template: 'tabpanel-4.pug'
 -
   url: '/responsive-design'
   label: 'Responsive Design'
-  template: 'tabpanel-4.pug'
+  template: 'tabpanel-5.pug'
