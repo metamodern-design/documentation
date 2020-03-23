@@ -1,8 +1,8 @@
 ## Sizing & Spacing
 
-- [Fractions and multiples of 16-px base unit](https://system.metamodern.design/sizing-spacing#base-units)
-- [Multiples of 64-px column unit](https://system.metamodern.design/sizing-spacing#column-units)
-- [Full, half, thirds, fourths, fifths](https://system.metamodern.design/sizing-spacing#relative-proportions)
+- [Base units (fractions/multiples of 16 px)](https://system.metamodern.design/sizing-spacing#base-units)
+- [Column units (multiples of 64 px)](https://system.metamodern.design/sizing-spacing#column-units)
+- [Relative proportions (full, half, thirds, fourths, fifths)](https://system.metamodern.design/sizing-spacing#relative-proportions)
 
 ## Typography
 
