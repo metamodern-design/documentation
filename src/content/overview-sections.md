@@ -14,7 +14,7 @@
 ## Borders
 
 - [Widths from 1 to 8 px](https://system.metamodern.design/borders#width)
-- [Radius values corresponding to every size/spacing class](https://system.metamodern.design/borders#radius)
+- [Radius values corresponding to base unit sizing](https://system.metamodern.design/borders#radius)
 
 ## Color Palette
 
