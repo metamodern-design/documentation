@@ -15,12 +15,16 @@ include /_mixins/index.pug
       != content.bordersWidth
     
     each i in [1, 2, 3, 4, 5, 6, 7, 8]
-      div(class=`
-        w-2c
-        h-2b
-        border-dark
-        border-t-${i}
-      `)
+      +level()
+        .w-2c.h-1b
+          div(class=`
+            w-full
+            h-1b
+            border-dark
+            border-t-${i}
+          `)
+        
+        +label(`border-${i}`)
     
   section
     h2#radius= 'Radius'
