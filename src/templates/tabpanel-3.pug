@@ -30,5 +30,11 @@ include /_mixins/index.pug
       != content.bordersRadius
       
     each i in ['quarter-', 'half-', 1, 'one-and-half-', 2, 'two-and-half-', 3, 4, 5, 6, 7, 8]
-      +rounded(`${i}b`, 'mb-1b')
+      +rounded(`${i}b`, 'mb-2b')
         = `rounded-${i}b`
+    
+    +rounded('full', 'mb-2b')
+        = 'rounded-full'
+        
+    +rounded('none', 'mb-2b')
+        = 'rounded-none'

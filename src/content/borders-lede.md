@@ -1,1 +1,1 @@
-Metamodern's design system expands Tailwind's border width and radius options.
+Our design system includes expanded border width and radius options.
