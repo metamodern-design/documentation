@@ -19,6 +19,7 @@ include /_mixins/index.pug
         div
           .w-2c.h-1b
           .w-2c.h-1b.border-dark(class=`border-t-${i}`)
+          .w-2c(class=`border-t-${i}`)
         
         +label(`border-${i}`)
     
@@ -30,7 +31,7 @@ include /_mixins/index.pug
       
     each i in ['quarter-', 'half-', 1, 'one-and-half-', 2, 'two-and-half-', 3, 4, 5, 6, 7, 8]
       +level('mb-half-b')
-        .w-4b.h-4b.border-dark(class=`rounded-${i}b`)
+        .w-4b.h-4b.border-1.border-dark(class=`rounded-${i}b`)
         +label(`rounded-${i}b`)
     
     
