@@ -32,8 +32,3 @@ include /_mixins/index.pug
     each i in ['quarter-', 'half-', 1, 'one-and-half-', 2, 'two-and-half-', 3, 4, 5, 6, 7, 8]
       +rounded(`${i}b`, 'mb-1b')
         = `rounded-${i}b`
-
-    each i in ['fifth', 'fourth', 'third', 'two-fifths', 'half', 'three-fifths', 'two-thirds', 'three-fourths', 'four-fifths', 'full']
-      +rounded(i, 'mb-1b')
-        = `rounded-${i}`
-    
