@@ -4,3 +4,16 @@ include /_mixins/index.pug
 +tabpanel('3', routes[3].label)
   +toc()
     != content.bordersToc
+
+  +lede()
+    != content.bordersLede
+    
+  section
+    h2#width= 'Width'
+    
+    != content.bordersWidth
+    
+  section
+    h2#radius= 'Radius'
+    
+    != content.bordersRadius

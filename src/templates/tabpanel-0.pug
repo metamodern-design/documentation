@@ -2,8 +2,8 @@ include /_mixins/index.pug
 
 
 +tabpanel('0', routes[0].label)
-  section
-    +lede()
-      != content.overviewLede
+  +lede()
+    != content.overviewLede
   
+  section
     != content.overviewSections
