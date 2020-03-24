@@ -15,18 +15,22 @@ include /_mixins/index.pug
       != content.bordersWidth
     
     each i in [1, 2, 3, 4, 5, 6, 7, 8]
-      +level()
-        .w-2c.h-1b
-          div(class=`
-            w-full
-            h-1b
-            border-dark
-            border-t-${i}
-          `)
+      +level('mb-half-b')
+        div
+          .w-2c.h-1b
+          .w-2c.h-1b.border-dark(class=`border-t-${i}`)
         
         +label(`border-${i}`)
     
   section
     h2#radius= 'Radius'
     
-    != content.bordersRadius
+    .mb-2b
+      != content.bordersRadius
+      
+    each i in ['quarter-', 'half-', 1, 'one-and-half-', 2, 'two-and-half-', 3, 4, 5, 6, 7, 8]
+      +level('mb-half-b')
+        .w-4b.h-4b.border-dark(class=`rounded-${i}b`)
+        +label(`rounded-${i}b`)
+    
+    
