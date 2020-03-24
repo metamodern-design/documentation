@@ -30,8 +30,6 @@ include /_mixins/index.pug
       != content.bordersRadius
       
     each i in ['quarter-', 'half-', 1, 'one-and-half-', 2, 'two-and-half-', 3, 4, 5, 6, 7, 8]
-      +level('mb-half-b')
-        .w-4b.h-4b.border-1.border-dark(class=`rounded-${i}b`)
-        +label(`rounded-${i}b`)
-    
+      +rounded(`{i}b`, 'mb-1b')
+        = `rounded-${i}b}`
     

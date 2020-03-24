@@ -1,0 +1,15 @@
+mixin rounded(size, classes='')
+  div(class=`
+    flex
+    items-center
+    justify-center
+    flex-shrink-0
+    w-5c
+    h-5c
+    border-2
+    border-dark
+    rounded-${size}
+    ${classes}
+  `)
+    code.font-bold.text-sm
+      block
