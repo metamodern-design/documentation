@@ -19,7 +19,7 @@
     "update": "updtr"
   },
   "dependencies": {
-    "@metamodern/static": "^0.7.0",
+    "@metamodern/static": "^0.8.0",
     "core-js": "^3.6.4",
     "history": "^4.10.1",
     "tailwindcss": "^1.2.0",
@@ -31,13 +31,12 @@
     "ava": "^2.4.0",
     "del-cli": "^3.0.0",
     "eslint": "^6.8.0",
-    "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-plugin-ava": "^9.0.0",
-    "eslint-plugin-import": "^2.20.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-ava": "^10.2.0",
+    "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-types": "^1.0.2",
     "esm": "^3.2.25",
     "gh-pages": "^2.2.0",
-    "np": "^5.2.1",
     "updtr": "^3.1.0"
   },
   "engines": {
