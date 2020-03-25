@@ -25,5 +25,5 @@
 
 ## Responsive Design
 
-- Breakpoint at 11 column units (704 px) for tablet layouts
+- Breakpoint at 11 column units (704 px) for tablet+ layouts
 - Breakpoint at 17 column units (1088 px) for laptop+ layouts
