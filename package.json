@@ -19,7 +19,7 @@
     "update": "updtr"
   },
   "dependencies": {
-    "@metamodern/static": "^0.9.0",
+    "@metamodern/static": "^0.9.1",
     "core-js": "^3.6.4",
     "history": "^4.10.1",
     "tailwindcss": "^1.2.0",
