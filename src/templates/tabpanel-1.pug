@@ -24,7 +24,7 @@ include /_mixins/index.pug
 
     != content.layoutBaseUnits
   
-    each i in ['quarter-', 'half-', 1, 'one-and-half-', 2, 'two-and-half-', 3, 4, 5, 6, 7, 8]
+    each i in ['quarter-', 'half-', 'three-quarter-', 1, 'one-and-quarter-', 'one-and-half-', 2, 'two-and-half-', 3, 4, 5, 6, 7, 8]
       +level('mb-half-b')
         .h-1b.bg-dark(class=`w-${i}b`)
         +label(`${i}b`)
@@ -34,7 +34,7 @@ include /_mixins/index.pug
     
     != content.layoutColumnUnits
     
-    each i in [1, 2, 3]
+    each i in [1, 'one-and-half-', 2, 'two-and-half-', 3, 'three-and-half-']
       +level('mb-half-b')
         .h-1b.bg-dark(class=`w-${i}c`)
         +label(`${i}c`)
