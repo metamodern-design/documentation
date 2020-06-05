@@ -1,3 +1,4 @@
+import designSystem from '@metamodern/design-system';
 import pkg from './package.json';
 
 
@@ -17,17 +18,20 @@ const postcss = {
 };
 
 
-const designSystemConfig = {
-  variants: {
-    borderWidth: ['responsive'],
-    borderRadius: ['responsive'],
-    display: ['responsive'],
-    fontSize: ['responsive'],
-    lineHeight: ['responsive'],
-    margin: ['responsive'],
-    padding: ['responsive'],
-    width: ['responsive'],
-  },
+const tailwindConfig = {
+  separator: '_',
+  ...designSystem({
+    variants: {
+      borderWidth: ['responsive'],
+      borderRadius: ['responsive'],
+      display: ['responsive'],
+      fontSize: ['responsive'],
+      lineHeight: ['responsive'],
+      margin: ['responsive'],
+      padding: ['responsive'],
+      width: ['responsive'],
+    },
+  }),
 };
 
 
