@@ -19,7 +19,6 @@
     "update": "updtr"
   },
   "dependencies": {
-    "@metamodern/design-system": "^2.0.0",
     "core-js": "^3.6.4",
     "history": "^4.10.1",
     "tailwindcss": "^1.2.0",
