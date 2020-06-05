@@ -1,4 +1,4 @@
-### rotation: positive or negative integer
+### hueRotation: positive or negative integer
 
 Rotate the color wheel to obtain a different set of hue values. For example, setting rotation to -10 will give you h:350 for "red", h:50 for "yellow", h:230 for "blue," and so on.
 

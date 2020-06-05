@@ -25,4 +25,4 @@
 
 ## Responsive Design
 
-- [Breakpoints at 11 and 17 column units](https://system.metamodern.design/responsive-design)
+- [Breakpoints at 11, 17 & 21 column units](https://system.metamodern.design/responsive-design)

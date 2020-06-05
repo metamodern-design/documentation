@@ -15,7 +15,7 @@ include /_mixins/index.pug
       != content.typographySize
     
     each i in ['xs', 'sm', 'base', 'lg', 'xl', '2xl', '3xl', '4xl', '5xl', '6xl']
-      p(class=`text-${i}` style='line-height: 1')= `text-${i}`
+      p(class=`text-${i} leading-none`)= `text-${i}`
     
   section
     h2#leading= 'Leading'
@@ -31,9 +31,8 @@ include /_mixins/index.pug
           div(class=`
             px-half-b mx-1b
             bg-medium-light-red-orange
-            text-${i}
-            leading-${i}${j}
-          `)= `leading-${i}${j}`
+            text-${i}${j}
+          `)= `text-${i}${j}`
     
     p.font-semibold.italic= '... up to 6xl'
   
