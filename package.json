@@ -27,7 +27,7 @@
     "typeface-source-code-pro": "^1.1.3"
   },
   "devDependencies": {
-    "@metamodern/static": "^0.10.1",
+    "@metamodern/static": "^0.10.2",
     "ava": "^2.4.0",
     "del-cli": "^3.0.0",
     "eslint": "^6.8.0",
