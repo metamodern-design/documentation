@@ -18,10 +18,12 @@ include /_mixins/index.pug
       p(class=`text-${i} leading-none`)= `text-${i}`
     
   section
-    h2#leading= 'Default Leadings'
+    h2#leading= 'Leading'
     
     .mb-2b
       != content.typographyDefaultLeadings
+      
+    h3= 'Default Leadings'
 
     each rows, i in {xs: 3, sm: 4, base: 4, lg: 4, xl: 5}
       h3= i
@@ -34,27 +36,24 @@ include /_mixins/index.pug
             text-${i}${j}
           `)= `text-${i}${j}`
     
-    p.font-semibold.italic= '... up to 6xl'
+    p.mb-2b font-semibold.italic= '... up to 6xl'
     
-  section
-    h2#leading= 'Leading Override'
+    h3= 'Leading Overrides'
     
     .mb-2b
       != content.typographyLeadingOverride
     
-    h3= 'Exact-pixel'
+    h4= 'Exact-pixel'
     
-    ul
-      each i in ['xs → 14px', 'sm → 16px', 'base → 20px', 'lg → 24px', 'xl → 32px', '2xl → 40px', '3xl → 48px', '4xl → 64px', '5xl → 80px', '6xl → 96px']
-        li
-          +label(i)
+    each i in ['xs → 14px', 'sm → 16px', 'base → 20px', 'lg → 24px', 'xl → 32px', '2xl → 40px', '3xl → 48px', '4xl → 64px', '5xl → 80px', '6xl → 96px']
+      p
+        +label(i)
     
-    h3= 'Relative'
+    h4= 'Relative'
     
-    ul
-      each i in ['none → 1', 'quarter → 1.25', 'three-eighths → 1.375', 'half → 1.5', 'five-eighths → 1.625', 'whole → 2']
-        li
-          +label(i)
+    each i in ['none → 1', 'quarter → 1.25', 'three-eighths → 1.375', 'half → 1.5', 'five-eighths → 1.625', 'whole → 2']
+      p
+        +label(i)
   
   section
     h2#family= 'Family'
