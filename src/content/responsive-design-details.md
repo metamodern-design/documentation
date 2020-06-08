@@ -2,4 +2,4 @@ Limiting transitions to three breakpoints simplifies responsive design while opt
 
 ## Turning on Responsive Variants
 
-In our Tailwind configuration, all variants (responsive, hover, focus, etc.) are turned __off__ by default. See here for [documentation on how to turn on variants](https://tailwindcss.com/docs/configuring-variants/). These options can be passed to our configuration generator or included in a *metamodern.config.js* file under the key *designSystemConfig*.
+In our Tailwind configuration, all variants (responsive, hover, focus, etc.) are turned __off__ by default. See here for [documentation on how to turn on variants](https://tailwindcss.com/docs/configuring-variants/). These options can be passed to our configuration generator.
